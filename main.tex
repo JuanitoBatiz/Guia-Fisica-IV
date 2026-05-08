@@ -43,9 +43,9 @@
 
 % ── Hipervínculos ───────────────────────────────────────────
 \usepackage[colorlinks=true, linkcolor=NavyBlue,
-            urlcolor=Guinda, citecolor=NavyBlue,
-            pdftitle={Guia Fisica IV - Caps 34 y 35},
-            pdfauthor={Curiel Garcia Juan Jesus}]{hyperref}
+            urlcolor=Guinda, citecolor=NavyBlue,
+            pdftitle={Guia Fisica IV - Caps 34 y 35},
+            pdfauthor={Curiel Garcia Juan Jesus}]{hyperref}
 
 % ── Numeración ──────────────────────────────────────────────
 \numberwithin{equation}{section}
@@ -58,7 +58,7 @@
 \setlength{\parindent}{0pt}
 
 % ============================================================
-%  PALETA DE COLORES — AZUL MARINO Y GUINDA (IPN)
+%  PALETA DE COLORES — AZUL MARINO Y GUINDA (IPN)
 % ============================================================
 \definecolor{NavyBlue}{RGB}{0, 32, 96}
 \definecolor{Guinda}{RGB}{130, 0, 30}
@@ -69,160 +69,160 @@
 \definecolor{DarkGray}{RGB}{50, 50, 60}
 
 % ============================================================
-%  FORMATO DE TÍTULOS
+%  FORMATO DE TÍTULOS
 % ============================================================
 
 \titleformat{\chapter}[display]
-  {\normalfont\LARGE\bfseries\color{NavyBlue}}
-  {\filleft
-   \colorbox{Guinda}{\color{white}\quad
-   \fontsize{48}{48}\selectfont\thechapter\quad}
-   \vspace{2pt}\color{Guinda}\titlerule[3pt]}
-  {0.5em}
-  {\filright\color{NavyBlue}}
-  [\vspace{4pt}\color{Guinda}\titlerule[1.5pt]\vspace{6pt}]
+  {\normalfont\LARGE\bfseries\color{NavyBlue}}
+  {\filleft
+   \colorbox{Guinda}{\color{white}\quad
+   \fontsize{48}{48}\selectfont\thechapter\quad}
+   \vspace{2pt}\color{Guinda}\titlerule[3pt]}
+  {0.5em}
+  {\filright\color{NavyBlue}}
+  [\vspace{4pt}\color{Guinda}\titlerule[1.5pt]\vspace{6pt}]
 
 \titlespacing{\chapter}{0pt}{-20pt}{20pt}
 
 \titleformat{\section}
-  {\normalfont\large\bfseries\color{NavyBlue}}
-  {\colorbox{NavyBlue}{\color{white}\;\thesection\;}}{0.7em}{}
-  [\color{Guinda}\titlerule[0.8pt]\vspace{2pt}]
+  {\normalfont\large\bfseries\color{NavyBlue}}
+  {\colorbox{NavyBlue}{\color{white}\;\thesection\;}}{0.7em}{}
+  [\color{Guinda}\titlerule[0.8pt]\vspace{2pt}]
 
 \titlespacing{\section}{0pt}{14pt}{8pt}
 
 \titleformat{\subsection}
-  {\normalfont\normalsize\bfseries\color{Guinda}}
-  {\thesubsection\;}{0.5em}{}
-  [\color{NavyBlue!30}\titlerule[0.4pt]]
+  {\normalfont\normalsize\bfseries\color{Guinda}}
+  {\thesubsection\;}{0.5em}{}
+  [\color{NavyBlue!30}\titlerule[0.4pt]]
 
 \titlespacing{\subsection}{0pt}{10pt}{5pt}
 
 \titleformat{\subsubsection}
-  {\normalfont\normalsize\bfseries\color{NavyBlue!80}}
-  {\thesubsubsection\;}{0.5em}{}
+  {\normalfont\normalsize\bfseries\color{NavyBlue!80}}
+  {\thesubsubsection\;}{0.5em}{}
 
 % ============================================================
-%  CABECERAS Y PIES DE PÁGINA
+%  CABECERAS Y PIES DE PÁGINA
 % ============================================================
 \pagestyle{fancy}
 \fancyhf{}
 
 \fancyhead[L]{%
-  \small\color{NavyBlue}\textbf{\leftmark}}
+  \small\color{NavyBlue}\textbf{\leftmark}}
 \fancyhead[R]{%
-  \small\color{Guinda}\textbf{Física IV · CECyT 9 IPN}}
+  \small\color{Guinda}\textbf{Física IV · CECyT 9 IPN}}
 
 \fancyfoot[L]{%
-  \footnotesize\color{DarkGray}\textit{Curiel García Juan Jesús}}
+  \footnotesize\color{DarkGray}\textit{Curiel García Juan Jesús}}
 \fancyfoot[C]{%
-  \footnotesize\color{NavyBlue!60}\rule{0pt}{8pt}}
+  \footnotesize\color{NavyBlue!60}\rule{0pt}{8pt}}
 \fancyfoot[R]{%
-  \small\color{NavyBlue}\textbf{\thepage}}
+  \small\color{NavyBlue}\textbf{\thepage}}
 
 \renewcommand{\headrulewidth}{1.2pt}
 \renewcommand{\headrule}{%
-  \hbox to\headwidth{\color{NavyBlue}\leaders\hrule height\headrulewidth\hfill}}
+  \hbox to\headwidth{\color{NavyBlue}\leaders\hrule height\headrulewidth\hfill}}
 \renewcommand{\footrulewidth}{0.6pt}
 \renewcommand{\footrule}{%
-  \hbox to\headwidth{\color{Guinda!50}\leaders\hrule height\footrulewidth\hfill}}
+  \hbox to\headwidth{\color{Guinda!50}\leaders\hrule height\footrulewidth\hfill}}
 
 \fancypagestyle{plain}{%
-  \fancyhf{}
-  \fancyfoot[C]{\small\color{NavyBlue}\textbf{\thepage}}
-  \renewcommand{\headrulewidth}{0pt}
-  \renewcommand{\footrulewidth}{0.6pt}
+  \fancyhf{}
+  \fancyfoot[C]{\small\color{NavyBlue}\textbf{\thepage}}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0.6pt}
 }
 
 % ============================================================
-%  CAJAS TEMÁTICAS
+%  CAJAS TEMÁTICAS
 % ============================================================
 \tcbset{
-  %% Caja de definición — azul marino
-  defbox/.style={
-    enhanced, breakable,
-    colback=LightNavy!60, colframe=NavyBlue,
-    fonttitle=\bfseries\small\color{white},
-    coltitle=white, colbacktitle=NavyBlue,
-    attach boxed title to top left={yshift=-2.5mm, xshift=5mm},
-    boxed title style={colframe=NavyBlue, colback=NavyBlue,
-      sharp corners, rounded corners=northeast},
-    arc=3pt, sharp corners=south,
-    top=5mm, left=4mm, right=4mm, bottom=4mm,
-    boxrule=0.8pt
-  },
-  %% Caja de propiedad / teorema — guinda
-  propbox/.style={
-    enhanced, breakable,
-    colback=LightGuinda!70, colframe=Guinda,
-    fonttitle=\bfseries\small\color{white},
-    coltitle=white, colbacktitle=Guinda,
-    attach boxed title to top left={yshift=-2.5mm, xshift=5mm},
-    boxed title style={colframe=Guinda, colback=Guinda,
-      sharp corners, rounded corners=northeast},
-    arc=3pt, sharp corners=south,
-    top=5mm, left=4mm, right=4mm, bottom=4mm,
-    boxrule=0.8pt
-  },
-  %% Caja de ejemplo / ejercicio — gris claro
-  exbox/.style={
-    enhanced, breakable,
-    colback=BoxGray, colframe=NavyBlue!45,
-    fonttitle=\bfseries\small\color{NavyBlue},
-    coltitle=NavyBlue, colbacktitle=NavyBlue!12,
-    attach boxed title to top left={yshift=-2.5mm, xshift=5mm},
-    boxed title style={colframe=NavyBlue!45, colback=NavyBlue!12,
-      sharp corners},
-    arc=3pt,
-    top=5mm, left=4mm, right=4mm, bottom=4mm,
-    boxrule=0.6pt
-  },
-  %% Caja de nota / advertencia — amarillo tenue
-  notebox/.style={
-    enhanced, breakable,
-    colback=yellow!7, colframe=GoldAccent,
-    fonttitle=\bfseries\small\color{GoldAccent},
-    coltitle=GoldAccent, colbacktitle=yellow!20,
-    attach boxed title to top left={yshift=-2.5mm, xshift=5mm},
-    boxed title style={colframe=GoldAccent, colback=yellow!20,
-      sharp corners},
-    arc=3pt,
-    top=5mm, left=4mm, right=4mm, bottom=4mm,
-    boxrule=0.6pt
-  },
-  %% Marco para figuras
-  figbox/.style={
-    enhanced,
-    colback=BoxGray, colframe=NavyBlue!30,
-    arc=4pt,
-    top=8mm, bottom=8mm, left=6mm, right=6mm,
-    boxrule=0.5pt
-  }
+  %% Caja de definición — azul marino
+  defbox/.style={
+    enhanced, breakable,
+    colback=LightNavy!60, colframe=NavyBlue,
+    fonttitle=\bfseries\small\color{white},
+    coltitle=white, colbacktitle=NavyBlue,
+    attach boxed title to top left={yshift=-2.5mm, xshift=5mm},
+    boxed title style={colframe=NavyBlue, colback=NavyBlue,
+      sharp corners, rounded corners=northeast},
+    arc=3pt, sharp corners=south,
+    top=5mm, left=4mm, right=4mm, bottom=4mm,
+    boxrule=0.8pt
+  },
+  %% Caja de propiedad / teorema — guinda
+  propbox/.style={
+    enhanced, breakable,
+    colback=LightGuinda!70, colframe=Guinda,
+    fonttitle=\bfseries\small\color{white},
+    coltitle=white, colbacktitle=Guinda,
+    attach boxed title to top left={yshift=-2.5mm, xshift=5mm},
+    boxed title style={colframe=Guinda, colback=Guinda,
+      sharp corners, rounded corners=northeast},
+    arc=3pt, sharp corners=south,
+    top=5mm, left=4mm, right=4mm, bottom=4mm,
+    boxrule=0.8pt
+  },
+  %% Caja de ejemplo / ejercicio — gris claro
+  exbox/.style={
+    enhanced, breakable,
+    colback=BoxGray, colframe=NavyBlue!45,
+    fonttitle=\bfseries\small\color{NavyBlue},
+    coltitle=NavyBlue, colbacktitle=NavyBlue!12,
+    attach boxed title to top left={yshift=-2.5mm, xshift=5mm},
+    boxed title style={colframe=NavyBlue!45, colback=NavyBlue!12,
+      sharp corners},
+    arc=3pt,
+    top=5mm, left=4mm, right=4mm, bottom=4mm,
+    boxrule=0.6pt
+  },
+  %% Caja de nota / advertencia — amarillo tenue
+  notebox/.style={
+    enhanced, breakable,
+    colback=yellow!7, colframe=GoldAccent,
+    fonttitle=\bfseries\small\color{GoldAccent},
+    coltitle=GoldAccent, colbacktitle=yellow!20,
+    attach boxed title to top left={yshift=-2.5mm, xshift=5mm},
+    boxed title style={colframe=GoldAccent, colback=yellow!20,
+      sharp corners},
+    arc=3pt,
+    top=5mm, left=4mm, right=4mm, bottom=4mm,
+    boxrule=0.6pt
+  },
+  %% Marco para figuras
+  figbox/.style={
+    enhanced,
+    colback=BoxGray, colframe=NavyBlue!30,
+    arc=4pt,
+    top=8mm, bottom=8mm, left=6mm, right=6mm,
+    boxrule=0.5pt
+  }
 }
 
 % ============================================================
-%  COMANDOS ÚTILES
+%  COMANDOS ÚTILES
 % ============================================================
-\newcommand{\vB}[1]{\boldsymbol{#1}}          % vector en negritas
-\newcommand{\un}[1]{\,\mathrm{#1}}            % unidades
-\newcommand{\ec}[1]{\textbf{(Ec.\;#1)}}       % referencia ecuación
+\newcommand{\vB}[1]{\boldsymbol{#1}}          % vector en negritas
+\newcommand{\un}[1]{\,\mathrm{#1}}            % unidades
+\newcommand{\ec}[1]{\textbf{(Ec.\;#1)}}       % referencia ecuación
 
 %% Figura placeholder
 \newcommand{\figplaceholder}[2]{%
-  \begin{tcolorbox}[figbox]
-    \centering
-    \textcolor{NavyBlue!50}{\rule{0pt}{2.8cm}}\\[4pt]
-    {\small\color{NavyBlue}\textbf{[FIGURA\ #1]}\\[2pt]
-    \textit{#2}}
-  \end{tcolorbox}
+  \begin{tcolorbox}[figbox]
+    \centering
+    \textcolor{NavyBlue!50}{\rule{0pt}{2.8cm}}\\[4pt]
+    {\small\color{NavyBlue}\textbf{[FIGURA\ #1]}\\[2pt]
+    \textit{#2}}
+  \end{tcolorbox}
 }
 
 %% Ecuación destacada con recuadro de color
 \newcommand{\ecimportante}[1]{%
-  \begin{equation}
-    \tcboxmath[colback=LightNavy!80, colframe=NavyBlue,
-      boxrule=0.8pt, arc=2pt]{#1}
-  \end{equation}
+  \begin{equation}
+    \tcboxmath[colback=LightNavy!80, colframe=NavyBlue,
+      boxrule=0.8pt, arc=2pt]{#1}
+  \end{equation}
 }
 
 % ============================================================
@@ -230,52 +230,52 @@
 % ============================================================
 
 % ──────────────────────────────────────────────────────────────
-%  PORTADA
+%  PORTADA
 % ──────────────────────────────────────────────────────────────
 \begin{titlepage}
-  \pagecolor{NavyBlue}
-  \color{white}
-  \centering
-  \vspace*{1.8cm}
+  \pagecolor{NavyBlue}
+  \color{white}
+  \centering
+  \vspace*{1.8cm}
 
-  % Línea decorativa superior
-  {\color{Guinda}\rule{0.55\textwidth}{2.5pt}}\\[0.6cm]
+  % Línea decorativa superior
+  {\color{Guinda}\rule{0.55\textwidth}{2.5pt}}\\[0.6cm]
 
-  {\fontsize{13}{16}\selectfont\scshape Instituto Politécnico Nacional}\\[0.25cm]
-  {\large Centro de Estudios Científicos y Tecnológicos No.\,9}\\[0.1cm]
-  {\normalsize\itshape ``Juan de Dios Bátiz Paredes''}\\[1.2cm]
+  {\fontsize{13}{16}\selectfont\scshape Instituto Politécnico Nacional}\\[0.25cm]
+  {\large Centro de Estudios Científicos y Tecnológicos No.\,9}\\[0.1cm]
+  {\normalsize\itshape ``Juan de Dios Bátiz Paredes''}\\[1.2cm]
 
-  {\color{Guinda}\rule{0.55\textwidth}{1.5pt}}\\[1cm]
+  {\color{Guinda}\rule{0.55\textwidth}{1.5pt}}\\[1cm]
 
-  {\fontsize{16}{20}\bfseries\selectfont GUÍA DE ESTUDIO}\\[0.4cm]
-  {\fontsize{28}{34}\bfseries\selectfont Física IV}\\[0.6cm]
+  {\fontsize{16}{20}\bfseries\selectfont GUÍA DE ESTUDIO}\\[0.4cm]
+  {\fontsize{28}{34}\bfseries\selectfont Física IV}\\[0.6cm]
 
-  {\color{Guinda}\rule{0.4\textwidth}{1pt}}\\[0.8cm]
+  {\color{Guinda}\rule{0.4\textwidth}{1pt}}\\[0.8cm]
 
-  {\fontsize{18}{22}\bfseries\selectfont
-   Capítulo 34 — El Campo Magnético}\\[0.4cm]
-  {\fontsize{18}{22}\bfseries\selectfont
-   Capítulo 35 — La Ley de Ampère}\\[1.5cm]
+  {\fontsize{18}{22}\bfseries\selectfont
+   Capítulo 34 — El Campo Magnético}\\[0.4cm]
+  {\fontsize{18}{22}\bfseries\selectfont
+   Capítulo 35 — La Ley de Ampère}\\[1.5cm]
 
-  {\color{Guinda}\rule{0.55\textwidth}{1.5pt}}\\[1.2cm]
+  {\color{Guinda}\rule{0.55\textwidth}{1.5pt}}\\[1.2cm]
 
-  {\large Elaborado por:}\\[0.4cm]
-  {\Large\bfseries CURIEL GARCÍA JUAN JESÚS}\\[2cm]
+  {\large Elaborado por:}\\[0.4cm]
+  {\Large\bfseries CURIEL GARCÍA JUAN JESÚS}\\[2cm]
 
-  \vfill
+  \vfill
 
-  {\small\color{white!65}
-   Contenido basado en: Resnick, Halliday \& Krane —
-   \textit{Física}, Vol.\,2 ·
-   Documento compilado con \LaTeX}\\[0.2cm]
-  {\small\color{white!65}\today}
+  {\small\color{white!65}
+   Contenido basado en: Resnick, Halliday \& Krane —
+   \textit{Física}, Vol.\,2 ·
+   Documento compilado con \LaTeX}\\[0.2cm]
+  {\small\color{white!65}\today}
 \end{titlepage}
 
 \pagecolor{white}
 \color{black}
 
 % ──────────────────────────────────────────────────────────────
-%  TABLA DE CONTENIDOS
+%  TABLA DE CONTENIDOS
 % ──────────────────────────────────────────────────────────────
 \tableofcontents
 \thispagestyle{fancy}
@@ -283,7 +283,7 @@
 
 % ==============================================================
 % ==============================================================
-%  CAPÍTULO 34 — EL CAMPO MAGNÉTICO
+%  CAPÍTULO 34 — EL CAMPO MAGNÉTICO
 % ==============================================================
 % ==============================================================
 \chapter{El Campo Magnético}
@@ -301,21 +301,21 @@ hierro. Estas piedras son imanes naturales.
 
 \textbf{Observaciones históricas fundamentales:}
 \begin{itemize}[leftmargin=1.8em, itemsep=2pt]
-  \item Los imanes naturales atraen hierro pero \textbf{no} oro ni plata:
-        el magnetismo es selectivo por material.
-  \item Dos imanes se atraen o repelen dependiendo de la orientación
-        relativa de sus extremos.
-  \item Una aguja magnetizada suspendida libremente se orienta siempre
-        en la misma dirección geográfica (principio de la brújula).
+  \item Los imanes naturales atraen hierro pero \textbf{no} oro ni plata:
+        el magnetismo es selectivo por material.
+  \item Dos imanes se atraen o repelen dependiendo de la orientación
+        relativa de sus extremos.
+  \item Una aguja magnetizada suspendida libremente se orienta siempre
+        en la misma dirección geográfica (principio de la brújula).
 \end{itemize}
 
 \textbf{Aplicaciones modernas del magnetismo:}
 \begin{itemize}[leftmargin=1.8em, itemsep=2pt]
-  \item Grabación magnética (cintas, discos duros, tarjetas).
-  \item Resonancia Magnética Nuclear (RMN) para imágenes médicas.
-  \item Motores eléctricos y generadores.
-  \item Medición del magnetismo planetario para estudiar estructuras internas.
-  \item Aceleradores de partículas (ciclotrón, sincrotrón).
+  \item Grabación magnética (cintas, discos duros, tarjetas).
+  \item Resonancia Magnética Nuclear (RMN) para imágenes médicas.
+  \item Motores eléctricos y generadores.
+  \item Medición del magnetismo planetario para estudiar estructuras internas.
+  \item Aceleradores de partículas (ciclotrón, sincrotrón).
 \end{itemize}
 
 % ----------------------------------------------------------
@@ -328,15 +328,15 @@ corriente está ocupado por un \textbf{campo magnético}, representado por el
 vector $\vB{B}$.
 
 \begin{tcolorbox}[notebox, title=Nota terminológica importante]
-  Existen dos vectores de campo en magnetismo:
-  \begin{itemize}[leftmargin=1.5em, itemsep=1pt]
-    \item $\vB{B}$: \textit{inducción magnética} o \textit{densidad de flujo
-          magnético}. Es la cantidad \textbf{más fundamental}.
-    \item $\vB{H}$: \textit{intensidad del campo magnético} (se usa en medios
-          materiales).
-  \end{itemize}
-  En este texto $\vB{B}$ se denomina simplemente
-  \textbf{``el campo magnético''}.
+  Existen dos vectores de campo en magnetismo:
+  \begin{itemize}[leftmargin=1.5em, itemsep=1pt]
+    \item $\vB{B}$: \textit{inducción magnética} o \textit{densidad de flujo
+          magnético}. Es la cantidad \textbf{más fundamental}.
+    \item $\vB{H}$: \textit{intensidad del campo magnético} (se usa en medios
+          materiales).
+  \end{itemize}
+  En este texto $\vB{B}$ se denomina simplemente
+  \textbf{``el campo magnético''}.
 \end{tcolorbox}
 
 % ----------------------------------------------------------
@@ -345,25 +345,25 @@ vector $\vB{B}$.
 
 En electrostática:
 \[
-  \text{carga eléctrica} \;\longleftrightarrow\; \vB{E}
-  \;\longleftrightarrow\; \text{carga eléctrica}
+  \text{carga eléctrica} \;\longleftrightarrow\; \vB{E}
+  \;\longleftrightarrow\; \text{carga eléctrica}
 \]
 
 Una analogía tentadora sería:
 \[
-  \text{carga magnética} \;\longleftrightarrow\; \vB{B}
-  \;\longleftrightarrow\; \text{carga magnética}
+  \text{carga magnética} \;\longleftrightarrow\; \vB{B}
+  \;\longleftrightarrow\; \text{carga magnética}
 \]
 Sin embargo, los \textit{monopolos magnéticos} no han sido hallados
 experimentalmente. La relación operativa correcta es:
 
 \begin{tcolorbox}[defbox, title=Relación fundamental del campo magnético]
-  \[
-    \text{corriente eléctrica} \;\longleftrightarrow\; \vB{B}
-    \;\longleftrightarrow\; \text{corriente eléctrica}
-  \]
-  El campo magnético es \textbf{creado} por cargas en movimiento (corrientes)
-  y \textbf{actúa} sobre cargas en movimiento (corrientes).
+  \[
+    \text{corriente eléctrica} \;\longleftrightarrow\; \vB{B}
+    \;\longleftrightarrow\; \text{corriente eléctrica}
+  \]
+  El campo magnético es \textbf{creado} por cargas en movimiento (corrientes)
+  y \textbf{actúa} sobre cargas en movimiento (corrientes).
 \end{tcolorbox}
 
 % ----------------------------------------------------------
@@ -375,17 +375,17 @@ $\vB{E}$: la tangente en cada punto da la \textbf{dirección} de $\vB{B}$,
 y la densidad de líneas es proporcional a la \textbf{magnitud} de $\vB{B}$.
 
 \begin{tcolorbox}[propbox, title=Diferencia fundamental respecto a las líneas de $\vB{E}$]
-  \begin{itemize}[leftmargin=1.5em, itemsep=2pt]
-    \item Las líneas de $\vB{E}$ son \textbf{abiertas}: nacen en cargas
-          positivas y terminan en negativas.
-    \item Las líneas de $\vB{B}$ forman \textbf{anillos cerrados}: nunca
-          comienzan ni terminan. Esto refleja la ausencia de monopolos
-          magnéticos.
-    \item La fuerza eléctrica $\vB{F}=q\vB{E}$ es \textbf{paralela} a
-          $\vB{E}$; la fuerza magnética
-          $\vB{F}=q\vB{v}\times\vB{B}$ es \textbf{perpendicular} a
-          $\vB{B}$.
-  \end{itemize}
+  \begin{itemize}[leftmargin=1.5em, itemsep=2pt]
+    \item Las líneas de $\vB{E}$ son \textbf{abiertas}: nacen en cargas
+          positivas y terminan en negativas.
+    \item Las líneas de $\vB{B}$ forman \textbf{anillos cerrados}: nunca
+          comienzan ni terminan. Esto refleja la ausencia de monopolos
+          magnéticos.
+    \item La fuerza eléctrica $\vB{F}=q\vB{E}$ es \textbf{paralela} a
+          $\vB{E}$; la fuerza magnética
+          $\vB{F}=q\vB{v}\times\vB{B}$ es \textbf{perpendicular} a
+          $\vB{B}$.
+  \end{itemize}
 \end{tcolorbox}
 
 \figplaceholder{34-1}{Limaduras de hierro sobre papel que cubre un imán de barra.
@@ -400,15 +400,15 @@ En un imán de barra las líneas emergen del \textbf{polo Norte} y entran por el
 \textbf{polo Sur}, formando siempre lazos cerrados a través del interior.
 
 \begin{itemize}[leftmargin=1.8em, itemsep=2pt]
-  \item Polos \textbf{opuestos} (N–S) $\Rightarrow$ se \textbf{atraen}.
-  \item Polos \textbf{iguales} (N–N ó S–S) $\Rightarrow$ se \textbf{repelen}.
+  \item Polos \textbf{opuestos} (N–S) $\Rightarrow$ se \textbf{atraen}.
+  \item Polos \textbf{iguales} (N–N ó S–S) $\Rightarrow$ se \textbf{repelen}.
 \end{itemize}
 
 \begin{tcolorbox}[notebox, title=Campo magnético terrestre]
-  El polo magnético de la Tierra en la región ártica es un polo magnético
-  \textbf{Sur} (por eso atrae al polo Norte de la brújula). Cerca del Ecuador
-  las líneas son casi paralelas a la superficie y apuntan del Sur geográfico
-  hacia el Norte geográfico.
+  El polo magnético de la Tierra en la región ártica es un polo magnético
+  \textbf{Sur} (por eso atrae al polo Norte de la brújula). Cerca del Ecuador
+  las líneas son casi paralelas a la superficie y apuntan del Sur geográfico
+  hacia el Norte geográfico.
 \end{tcolorbox}
 
 \figplaceholder{34-2}{Líneas del campo magnético de un imán de barra, mostrando
@@ -425,44 +425,44 @@ Se proyecta una carga $q$ con velocidad $\vB{v}$ por distintos puntos y
 direcciones; se registran los resultados:
 
 \begin{enumerate}[label=\textbf{Exp.\,\arabic*.},
-                  leftmargin=3.2em, itemsep=4pt]
-  \item \textbf{Perpendicularidad.} $\vB{F}$ actúa siempre $\perp$ a
-        $\vB{v}$, sea cual sea la dirección de $\vB{v}$.
-  \item \textbf{Dependencia angular.} $F\propto\sin\varphi$, donde
-        $\varphi$ es el ángulo entre $\vB{v}$ y la dirección de $\vB{B}$.
-  \item \textbf{Proporcionalidad con $v$.} $F\propto v$.
-  \item \textbf{Proporcionalidad con $q$.} $F\propto|q|$; se invierte si
-        $q$ cambia de signo.
+                  leftmargin=3.2em, itemsep=4pt]
+  \item \textbf{Perpendicularidad.} $\vB{F}$ actúa siempre $\perp$ a
+        $\vB{v}$, sea cual sea la dirección de $\vB{v}$.
+  \item \textbf{Dependencia angular.} $F\propto\sin\varphi$, donde
+        $\varphi$ es el ángulo entre $\vB{v}$ y la dirección de $\vB{B}$.
+  \item \textbf{Proporcionalidad con $v$.} $F\propto v$.
+  \item \textbf{Proporcionalidad con $q$.} $F\propto|q|$; se invierte si
+        $q$ cambia de signo.
 \end{enumerate}
 
 \subsection{Definición Formal de \texorpdfstring{$\vB{B}$}{B}}
 
 \begin{tcolorbox}[defbox, title=Definición operacional del campo magnético]
-  \textbf{Dirección de $\vB{B}$:} dirección de $\vB{v}$ para la cual
-  $F=0$.\\[5pt]
-  \textbf{Magnitud de $\vB{B}$:}
-  \begin{equation}
-    \boxed{B = \frac{F_{\perp}}{qv}}
-    \label{eq:defB}
-  \end{equation}
-  donde $F_\perp$ es la fuerza máxima cuando $\vB{v}\perp\vB{B}$.
+  \textbf{Dirección de $\vB{B}$:} dirección de $\vB{v}$ para la cual
+  $F=0$.\\[5pt]
+  \textbf{Magnitud de $\vB{B}$:}
+  \begin{equation}
+    \boxed{B = \frac{F_{\perp}}{qv}}
+    \label{eq:defB}
+  \end{equation}
+  donde $F_\perp$ es la fuerza máxima cuando $\vB{v}\perp\vB{B}$.
 \end{tcolorbox}
 
 \subsection{Expresión Vectorial de la Fuerza Magnética}
 
 \begin{tcolorbox}[defbox, title=Fuerza magnética — Forma escalar y vectorial]
-  \textbf{Forma escalar:}
-  \begin{equation}
-    \boxed{F = qvB\sin\varphi}
-    \label{eq:Fmagescalar}
-  \end{equation}
-  donde $0^\circ\le\varphi\le180^\circ$ es el ángulo más pequeño entre
-  $\vB{v}$ y $\vB{B}$.\\[6pt]
-  \textbf{Forma vectorial:}
-  \begin{equation}
-    \boxed{\vB{F} = q\,\vB{v}\times\vB{B}}
-    \label{eq:Fmagvect}
-  \end{equation}
+  \textbf{Forma escalar:}
+  \begin{equation}
+    \boxed{F = qvB\sin\varphi}
+    \label{eq:Fmagescalar}
+  \end{equation}
+  donde $0^\circ\le\varphi\le180^\circ$ es el ángulo más pequeño entre
+  $\vB{v}$ y $\vB{B}$.\\[6pt]
+  \textbf{Forma vectorial:}
+  \begin{equation}
+    \boxed{\vB{F} = q\,\vB{v}\times\vB{B}}
+    \label{eq:Fmagvect}
+  \end{equation}
 \end{tcolorbox}
 
 \textbf{Regla de la mano derecha} para $\vB{v}\times\vB{B}$: apuntar los
@@ -472,10 +472,10 @@ contrario.
 
 \textbf{Casos extremos:}
 \begin{itemize}[leftmargin=1.8em, itemsep=2pt]
-  \item $\varphi=0^\circ$ ó $180^\circ$ $\Rightarrow$
-        $F=0$ (sin deflexión).
-  \item $\varphi=90^\circ$ $\Rightarrow$
-        $F=F_{\max}=|q|vB$.
+  \item $\varphi=0^\circ$ ó $180^\circ$ $\Rightarrow$
+        $F=0$ (sin deflexión).
+  \item $\varphi=90^\circ$ $\Rightarrow$
+        $F=F_{\max}=|q|vB$.
 \end{itemize}
 
 \figplaceholder{34-3}{Relación geométrica entre los vectores $\vB{F}$,
@@ -485,34 +485,34 @@ $\vB{v}$ y $\vB{B}$ para una carga positiva en movimiento
 \subsection{Propiedades Fundamentales de la Fuerza Magnética}
 
 \begin{tcolorbox}[propbox, title=Propiedades esenciales]
-  \begin{enumerate}[leftmargin=1.5em, itemsep=4pt]
-    \item $\vB{F}\perp\vB{v}$ en todo instante.
-    \item \textbf{La fuerza magnética no realiza trabajo:}
-      \[
-        dW = \vB{F}\cdot d\vB{s} = \vB{F}\cdot\vB{v}\,dt
-           = 0 \qquad (\text{pues }\vB{F}\perp\vB{v})
-      \]
-    \item Por el teorema trabajo–energía: $\Delta K=0$, de modo que
-      \[
-        |\vB{v}| = \text{constante bajo }\ \vB{B}\ \text{ estático.}
-      \]
-    \item La fuerza es \textbf{deflectora}: curva la trayectoria sin
-          cambiar la rapidez.
-  \end{enumerate}
+  \begin{enumerate}[leftmargin=1.5em, itemsep=4pt]
+    \item $\vB{F}\perp\vB{v}$ en todo instante.
+    \item \textbf{La fuerza magnética no realiza trabajo:}
+      \[
+        dW = \vB{F}\cdot d\vB{s} = \vB{F}\cdot\vB{v}\,dt
+           = 0 \qquad (\text{pues }\vB{F}\perp\vB{v})
+      \]
+    \item Por el teorema trabajo–energía: $\Delta K=0$, de modo que
+      \[
+        |\vB{v}| = \text{constante bajo }\ \vB{B}\ \text{ estático.}
+      \]
+    \item La fuerza es \textbf{deflectora}: curva la trayectoria sin
+          cambiar la rapidez.
+  \end{enumerate}
 \end{tcolorbox}
 
 \subsection{Unidades del Campo Magnético}
 
 De la Ec.\,\eqref{eq:defB}:
 \[
-  [B] = \frac{\mathrm{N}}{\mathrm{C}\cdot\mathrm{m/s}}
-       = \frac{\mathrm{N}}{\mathrm{A}\cdot\mathrm{m}}
+  [B] = \frac{\mathrm{N}}{\mathrm{C}\cdot\mathrm{m/s}}
+       = \frac{\mathrm{N}}{\mathrm{A}\cdot\mathrm{m}}
 \]
 
 La unidad SI es el \textbf{tesla} (T):
 \begin{equation}
-  \boxed{1\un{T} = 1\,\frac{\mathrm{N}}{\mathrm{A}\cdot\mathrm{m}}
-                 = 1\,\frac{\mathrm{kg}}{\mathrm{A}\cdot\mathrm{s}^2}}
+  \boxed{1\un{T} = 1\,\frac{\mathrm{N}}{\mathrm{A}\cdot\mathrm{m}}
+                 = 1\,\frac{\mathrm{kg}}{\mathrm{A}\cdot\mathrm{s}^2}}
 \end{equation}
 
 Relación con la unidad CGS: $1\un{T}=10^4\un{G}$ (gauss).
@@ -521,17 +521,17 @@ Relación con la unidad CGS: $1\un{T}=10^4\un{G}$ (gauss).
 \begin{center}
 \rowcolors{2}{LightNavy!50}{white}
 \begin{tabular}{lc}
-  \toprule
-  \textbf{Ubicación} & $\boldsymbol{B}$ \textbf{(T)} \\
-  \midrule
-  Sala blindada magnéticamente & ${\sim}10^{-14}$ \\
-  Espacio interestelar         & ${\sim}10^{-10}$ \\
-  Superficie de la Tierra      & ${\sim}10^{-4}$  \\
-  Imán pequeño de barra        & ${\sim}10^{-2}$  \\
-  Electroimán grande de lab.   & ${\sim}1$        \\
-  Imán superconductor          & ${\sim}5$        \\
-  Estrella de neutrones (calc.)& ${\sim}10^{8}$   \\
-  \bottomrule
+  \toprule
+  \textbf{Ubicación} & $\boldsymbol{B}$ \textbf{(T)} \\
+  \midrule
+  Sala blindada magnéticamente & ${\sim}10^{-14}$ \\
+  Espacio interestelar         & ${\sim}10^{-10}$ \\
+  Superficie de la Tierra      & ${\sim}10^{-4}$  \\
+  Imán pequeño de barra        & ${\sim}10^{-2}$  \\
+  Electroimán grande de lab.   & ${\sim}1$        \\
+  Imán superconductor          & ${\sim}5$        \\
+  Estrella de neutrones (calc.)& ${\sim}10^{8}$   \\
+  \bottomrule
 \end{tabular}
 \captionof{table}{Valores típicos del campo magnético (Tabla\,1, Cap.\,34).}
 \end{center}
@@ -546,15 +546,15 @@ Cuando actúan simultáneamente $\vB{E}$ y $\vB{B}$ sobre una partícula
 cargada, la fuerza total es la \textbf{fuerza de Lorentz}:
 
 \begin{equation}
-  \boxed{\vB{F} = q\vB{E} + q\,\vB{v}\times\vB{B}}
-  \label{eq:Lorentz}
+  \boxed{\vB{F} = q\vB{E} + q\,\vB{v}\times\vB{B}}
+  \label{eq:Lorentz}
 \end{equation}
 
 \begin{itemize}[leftmargin=1.8em, itemsep=2pt]
-  \item Componente eléctrica $q\vB{E}$: actúa sobre \textit{cualquier}
-        partícula cargada, en reposo o en movimiento.
-  \item Componente magnética $q\vB{v}\times\vB{B}$: actúa
-        \textit{únicamente} sobre partículas \textbf{en movimiento}.
+  \item Componente eléctrica $q\vB{E}$: actúa sobre \textit{cualquier}
+        partícula cargada, en reposo o en movimiento.
+  \item Componente magnética $q\vB{v}\times\vB{B}$: actúa
+        \textit{únicamente} sobre partículas \textbf{en movimiento}.
 \end{itemize}
 
 \subsection{El Selector de Velocidad}
@@ -563,9 +563,9 @@ Con $\vB{E}\perp\vB{B}$ y ambos $\perp\vB{v}$, las fuerzas eléctrica y
 magnética se oponen. La condición $\vB{F}_\text{neta}=\vB{0}$ exige:
 
 \begin{equation}
-  qE = qvB \implies
-  \boxed{v = \frac{E}{B}}
-  \label{eq:selectorv}
+  qE = qvB \implies
+  \boxed{v = \frac{E}{B}}
+  \label{eq:selectorv}
 \end{equation}
 
 Solo las partículas con exactamente $v=E/B$ pasan sin desviarse,
@@ -574,20 +574,20 @@ Solo las partículas con exactamente $v=E/B$ pasan sin desviarse,
 \subsection{Experimento de J.\,J.\ Thomson — Medición de \texorpdfstring{$e/m$}{e/m} (1897)}
 
 \begin{tcolorbox}[exbox, title=Procedimiento de Thomson]
-  \textbf{Paso\,1 — Solo campo $E$:} la desviación vertical del haz es:
-  \begin{equation}
-    y = -\frac{qEL^2}{2mv^2}
-    \label{eq:Thomson1}
-  \end{equation}
-  \textbf{Paso\,2 — Agregar $B$:} se ajusta hasta que la desviación es
-  cero $\Rightarrow v=E/B$.\\[5pt]
-  \textbf{Paso\,3 — Resultado:}
-  \begin{equation}
-    \boxed{\frac{e}{m} = \frac{2yE}{B^2L^2}}
-    \label{eq:Thomson2}
-  \end{equation}
-  Thomson obtuvo $e/m\approx1.7\times10^{11}\un{C/kg}$.\\
-  Valor moderno: $e/m=1.758\,819\,62\times10^{11}\un{C/kg}$.
+  \textbf{Paso\,1 — Solo campo $E$:} la desviación vertical del haz es:
+  \begin{equation}
+    y = -\frac{qEL^2}{2mv^2}
+    \label{eq:Thomson1}
+  \end{equation}
+  \textbf{Paso\,2 — Agregar $B$:} se ajusta hasta que la desviación es
+  cero $\Rightarrow v=E/B$.\\[5pt]
+  \textbf{Paso\,3 — Resultado:}
+  \begin{equation}
+    \boxed{\frac{e}{m} = \frac{2yE}{B^2L^2}}
+    \label{eq:Thomson2}
+  \end{equation}
+  Thomson obtuvo $e/m\approx1.7\times10^{11}\un{C/kg}$.\\
+  Valor moderno: $e/m=1.758\,819\,62\times10^{11}\un{C/kg}$.
 \end{tcolorbox}
 
 \figplaceholder{34-4}{Versión moderna del aparato de J.\,J.\,Thomson para medir
@@ -599,12 +599,12 @@ $e/m$ del electrón. Filamento F, placas P, bobinas de campo B, pantalla S
 El radio de la trayectoria semicircular de un ion con velocidad $v=E/B$ en el
 campo $B'$ es:
 \[
-  r = \frac{mv}{|q|B'} = \frac{mE}{|q|BB'}
+  r = \frac{mv}{|q|B'} = \frac{mE}{|q|BB'}
 \]
 Despejando la razón carga–masa (espectrómetro Bainbridge):
 \begin{equation}
-  \boxed{\frac{q}{m} = \frac{E}{rBB'}}
-  \label{eq:masspectrometer}
+  \boxed{\frac{q}{m} = \frac{E}{rBB'}}
+  \label{eq:masspectrometer}
 \end{equation}
 
 \figplaceholder{34-5}{Diagrama del espectrómetro de masas Bainbridge. Selector de
@@ -629,52 +629,52 @@ colisiones con el gas (Fig.\,10 del texto, Cap.\,34).}
 
 Igualando fuerza centrípeta y magnética:
 \[
-  \frac{mv^2}{r} = |q|vB
+  \frac{mv^2}{r} = |q|vB
 \]
 \begin{equation}
-  \boxed{r = \frac{mv}{|q|B} = \frac{p}{|q|B}}
-  \label{eq:radiocircular}
+  \boxed{r = \frac{mv}{|q|B} = \frac{p}{|q|B}}
+  \label{eq:radiocircular}
 \end{equation}
 donde $p=mv$ es el \textit{ímpetu} lineal.
 
 \begin{tcolorbox}[exbox,
-  title=Ejemplo — Protón de $5.3\un{MeV}$ en $B=1.2\un{mT}$]
-  \textbf{Velocidad} (a partir de $K=\tfrac{1}{2}mv^2$):
-  \[
-    v = \sqrt{\frac{2K}{m}}
-      = \sqrt{\frac{2\times5.3\times1.60\times10^{-13}}{1.67\times10^{-27}}}
-      = 3.2\times10^{7}\un{m/s}
-  \]
-  \textbf{Fuerza magnética} ($\varphi=90^\circ$):
-  \[
-    F = |q|vB
-      = (1.60\times10^{-19})(3.2\times10^{7})(1.2\times10^{-3})
-      = 6.1\times10^{-15}\un{N}
-  \]
-  \textbf{Dirección:} $\vB{v}$ al Norte, $\vB{B}$ hacia arriba $\Rightarrow$
-  $\vB{F}$ apunta al \textbf{Este} (regla de la mano derecha).\\[4pt]
-  \textit{Verificación relativista:}
-  $K=5.3\un{MeV}\ll m_pc^2=938\un{MeV}$ $\checkmark$
+  title=Ejemplo — Protón de $5.3\un{MeV}$ en $B=1.2\un{mT}$]
+  \textbf{Velocidad} (a partir de $K=\tfrac{1}{2}mv^2$):
+  \[
+    v = \sqrt{\frac{2K}{m}}
+      = \sqrt{\frac{2\times5.3\times1.60\times10^{-13}}{1.67\times10^{-27}}}
+      = 3.2\times10^{7}\un{m/s}
+  \]
+  \textbf{Fuerza magnética} ($\varphi=90^\circ$):
+  \[
+    F = |q|vB
+      = (1.60\times10^{-19})(3.2\times10^{7})(1.2\times10^{-3})
+      = 6.1\times10^{-15}\un{N}
+  \]
+  \textbf{Dirección:} $\vB{v}$ al Norte, $\vB{B}$ hacia arriba $\Rightarrow$
+  $\vB{F}$ apunta al \textbf{Este} (regla de la mano derecha).\\[4pt]
+  \textit{Verificación relativista:}
+  $K=5.3\un{MeV}\ll m_pc^2=938\un{MeV}$ $\checkmark$
 \end{tcolorbox}
 
 \subsection{Velocidad Angular y Frecuencia Ciclotrón}
 
 \begin{equation}
-  \boxed{\omega = \frac{|q|B}{m}}
-  \label{eq:omega_ciclotron}
+  \boxed{\omega = \frac{|q|B}{m}}
+  \label{eq:omega_ciclotron}
 \end{equation}
 
 \begin{equation}
-  \boxed{\nu = \frac{\omega}{2\pi} = \frac{|q|B}{2\pi m}}
-  \label{eq:nu_ciclotron}
+  \boxed{\nu = \frac{\omega}{2\pi} = \frac{|q|B}{2\pi m}}
+  \label{eq:nu_ciclotron}
 \end{equation}
 
 \begin{tcolorbox}[propbox, title=Isocronismo del movimiento ciclotrón]
-  La frecuencia ciclotrón $\nu$ es \textbf{independiente de la velocidad}
-  $v$. Una partícula lenta (círculo pequeño) y una rápida (círculo grande)
-  tardan exactamente el mismo tiempo $T=1/\nu=2\pi m/(|q|B)$ en
-  completar una vuelta.\\[4pt]
-  \textbf{Condición de validez:} $v\ll c$ (régimen no relativista).
+  La frecuencia ciclotrón $\nu$ es \textbf{independiente de la velocidad}
+  $v$. Una partícula lenta (círculo pequeño) y una rápida (círculo grande)
+  tardan exactamente el mismo tiempo $T=1/\nu=2\pi m/(|q|B)$ en
+  completar una vuelta.\\[4pt]
+  \textbf{Condición de validez:} $v\ll c$ (régimen no relativista).
 \end{tcolorbox}
 
 % ============================================================
@@ -695,54 +695,54 @@ Trayectoria en espiral creciente (Fig.\,12 del texto, Cap.\,34).}
 
 \textbf{Principio de operación:}
 \begin{enumerate}[leftmargin=2.2em, itemsep=4pt]
-  \item Los iones son \textbf{acelerados en el entrehierro} por el campo
-        eléctrico oscilante.
-  \item \textbf{Dentro de cada dee} (conductor hueco, $E=0$), el campo
-        magnético curva la trayectoria en un semicírculo.
-  \item Gracias al isocronismo, el ion llega al entrehierro exactamente
-        cuando el campo se ha invertido (\textbf{condición de resonancia}).
-  \item La partícula espirala hacia afuera ganando energía en cada paso.
+  \item Los iones son \textbf{acelerados en el entrehierro} por el campo
+        eléctrico oscilante.
+  \item \textbf{Dentro de cada dee} (conductor hueco, $E=0$), el campo
+        magnético curva la trayectoria en un semicírculo.
+  \item Gracias al isocronismo, el ion llega al entrehierro exactamente
+        cuando el campo se ha invertido (\textbf{condición de resonancia}).
+  \item La partícula espirala hacia afuera ganando energía en cada paso.
 \end{enumerate}
 
 \textbf{Condición de resonancia:}
 \begin{equation}
-  \nu_\text{oscilador} = \nu_\text{ciclotrón} = \frac{|q|B}{2\pi m}
-  \label{eq:resonancia}
+  \nu_\text{oscilador} = \nu_\text{ciclotrón} = \frac{|q|B}{2\pi m}
+  \label{eq:resonancia}
 \end{equation}
 
 \textbf{Velocidad y energía al salir} (radio máximo $R$):
 \begin{equation}
-  \boxed{v_\text{final} = \frac{|q|BR}{m}}
-  \label{eq:vfinal}
+  \boxed{v_\text{final} = \frac{|q|BR}{m}}
+  \label{eq:vfinal}
 \end{equation}
 
 \begin{equation}
-  \boxed{K = \frac{q^2B^2R^2}{2m}}
-  \label{eq:Kfinal}
+  \boxed{K = \frac{q^2B^2R^2}{2m}}
+  \label{eq:Kfinal}
 \end{equation}
 
 \begin{tcolorbox}[notebox, title=Observación sorprendente]
-  La energía final $K$ depende de $B$ y $R$, pero \textbf{no} de la
-  diferencia de potencial del oscilador. Una diferencia mayor acelera
-  más por paso, pero la partícula da menos vueltas; la energía final
-  es la misma.
+  La energía final $K$ depende de $B$ y $R$, pero \textbf{no} de la
+  diferencia de potencial del oscilador. Una diferencia mayor acelera
+  más por paso, pero la partícula da menos vueltas; la energía final
+  es la misma.
 \end{tcolorbox}
 
 \begin{tcolorbox}[exbox,
-  title=Ejemplo — Ciclotrón para deuterones ($R=75\un{cm}$,
-  $B=1.5\un{T}$; $m_d=3.34\times10^{-27}\un{kg}$, $q=+e$)]
-  \textit{(a) Frecuencia del oscilador:}
-  \[
-    \nu = \frac{(1.60\times10^{-19})(1.5)}
-              {2\pi(3.34\times10^{-27})}
-        = 1.1\times10^{7}\un{Hz} = 11\un{MHz}
-  \]
-  \textit{(b) Energía máxima:}
-  \[
-    K = \frac{(1.60\times10^{-19})^2(1.5)^2(0.75)^2}
-            {2(3.34\times10^{-27})}
-      = 4.85\times10^{-12}\un{J} = 30\un{MeV}
-  \]
+  title=Ejemplo — Ciclotrón para deuterones ($R=75\un{cm}$,
+  $B=1.5\un{T}$; $m_d=3.34\times10^{-27}\un{kg}$, $q=+e$)]
+  \textit{(a) Frecuencia del oscilador:}
+  \[
+    \nu = \frac{(1.60\times10^{-19})(1.5)}
+              {2\pi(3.34\times10^{-27})}
+        = 1.1\times10^{7}\un{Hz} = 11\un{MHz}
+  \]
+  \textit{(b) Energía máxima:}
+  \[
+    K = \frac{(1.60\times10^{-19})^2(1.5)^2(0.75)^2}
+            {2(3.34\times10^{-27})}
+      = 4.85\times10^{-12}\un{J} = 30\un{MeV}
+  \]
 \end{tcolorbox}
 
 \subsection{Corrección Relativista — Límite del Ciclotrón}
@@ -752,8 +752,8 @@ $p=mv/\!\sqrt{1-v^2/c^2}$, y la frecuencia ciclotrón se vuelve
 dependiente de $v$:
 
 \begin{equation}
-  \nu = \frac{|q|B\sqrt{1-v^2/c^2}}{2\pi m}
-  \label{eq:nu_rel}
+  \nu = \frac{|q|B\sqrt{1-v^2/c^2}}{2\pi m}
+  \label{eq:nu_rel}
 \end{equation}
 
 La condición de resonancia \textbf{se pierde} para energías altas
@@ -766,13 +766,13 @@ mantener el radio de la órbita constante. Se usan muchos imanes individuales
 distribuidos a lo largo de un gran anillo de radio fijo.
 
 \begin{tcolorbox}[exbox, title=Sincrotrón del Fermilab (referencia histórica)]
-  \begin{itemize}[leftmargin=1.5em, itemsep=2pt]
-    \item Circunferencia: $\approx6.4\un{km}$ (4 millas).
-    \item Número de imanes: $\approx3\,000$.
-    \item Los protones dan $\sim400\,000$ vueltas para alcanzar
-          $\mathbf{1\,000\un{GeV}=1\un{TeV}}$.
-    \item Duración del proceso: $\sim10\un{s}$ por ráfaga.
-  \end{itemize}
+  \begin{itemize}[leftmargin=1.5em, itemsep=2pt]
+    \item Circunferencia: $\approx6.4\un{km}$ (4 millas).
+    \item Número de imanes: $\approx3\,000$.
+    \item Los protones dan $\sim400\,000$ vueltas para alcanzar
+          $\mathbf{1\,000\un{GeV}=1\un{TeV}}$.
+    \item Duración del proceso: $\sim10\un{s}$ por ráfaga.
+  \end{itemize}
 \end{tcolorbox}
 
 % ============================================================
@@ -798,10 +798,10 @@ fusión termonuclear (tokamaks).
 El campo magnético terrestre actúa como espejo magnético a escala planetaria:
 
 \begin{itemize}[leftmargin=1.8em, itemsep=2pt]
-  \item \textbf{Cinturón interno:} principalmente protones atrapados.
-  \item \textbf{Cinturón externo:} principalmente electrones atrapados.
-  \item Las partículas oscilan en espiral entre los polos en tiempos de
-        segundos y derivan lentamente alrededor de la Tierra.
+  \item \textbf{Cinturón interno:} principalmente protones atrapados.
+  \item \textbf{Cinturón externo:} principalmente electrones atrapados.
+  \item Las partículas oscilan en espiral entre los polos en tiempos de
+        segundos y derivan lentamente alrededor de la Tierra.
 \end{itemize}
 
 Descubiertos por James Van Allen en 1958 con los primeros satélites
@@ -811,18 +811,18 @@ artificiales estadounidenses.
 
 Para $\vB{B}=B_0\hat{z}$, las ecuaciones de movimiento son:
 \[
-  F_x = qv_yB_0,\qquad F_y = -qv_xB_0,\qquad F_z=0
+  F_x = qv_yB_0,\qquad F_y = -qv_xB_0,\qquad F_z=0
 \]
 
 Integración numérica con paso temporal $\delta t$:
 \begin{align}
-  \delta v_x &= \frac{qB_0}{m}\,v_y\,\delta t \\[4pt]
-  \delta v_y &= -\frac{qB_0}{m}\,v_x\,\delta t
+  \delta v_x &= \frac{qB_0}{m}\,v_y\,\delta t \\[4pt]
+  \delta v_y &= -\frac{qB_0}{m}\,v_x\,\delta t
 \end{align}
 
 Actualización con velocidad promedio:
 \[
-  x_\text{nuevo} = x + \tfrac{1}{2}(v_{x,\text{viejo}}+v_{x,\text{nuevo}})\,\delta t
+  x_\text{nuevo} = x + \tfrac{1}{2}(v_{x,\text{viejo}}+v_{x,\text{nuevo}})\,\delta t
 \]
 
 Para campo no uniforme
@@ -836,9 +836,9 @@ patrón en forma de \textbf{flor}.
 \subsection{Principio Físico}
 
 \begin{tcolorbox}[notebox, title=Contexto histórico]
-  Descubierto por \textbf{Edwin H.\ Hall} en 1879, estudiante de posgrado
-  de 24 años en la Universidad Johns Hopkins — \textbf{veinte años antes}
-  del descubrimiento del electrón por Thomson (1897).
+  Descubierto por \textbf{Edwin H.\ Hall} en 1879, estudiante de posgrado
+  de 24 años en la Universidad Johns Hopkins — \textbf{veinte años antes}
+  del descubrimiento del electrón por Thomson (1897).
 \end{tcolorbox}
 
 Una cinta de anchura $w$ y espesor $t$ conduce corriente $i$; un campo
@@ -852,8 +852,8 @@ se acumulan en el lado derecho (Fig.\,18 del texto, Cap.\,34).}
 
 \textbf{Condición de equilibrio} (fuerza de Lorentz neta = 0):
 \begin{align}
-  q\vB{E}_H + q\vB{v}_d\times\vB{B} &= \vB{0} \notag\\
-  E_H &= v_d B \label{eq:HallEq}
+  q\vB{E}_H + q\vB{v}_d\times\vB{B} &= \vB{0} \notag\\
+  E_H &= v_d B \label{eq:HallEq}
 \end{align}
 
 \subsection{Densidad de Portadores de Carga}
@@ -861,19 +861,19 @@ se acumulan en el lado derecho (Fig.\,18 del texto, Cap.\,34).}
 Con la relación $v_d=i/(newt)$:
 
 \begin{equation}
-  \boxed{V_H = \frac{iB}{net}}
-  \label{eq:VHall}
+  \boxed{V_H = \frac{iB}{net}}
+  \label{eq:VHall}
 \end{equation}
 
 \begin{equation}
-  \boxed{n = \frac{iB}{etV_H}}
-  \label{eq:nHall}
+  \boxed{n = \frac{iB}{etV_H}}
+  \label{eq:nHall}
 \end{equation}
 
 \textbf{Resistencia Hall:}
 \begin{equation}
-  R_H = \frac{V_H}{i} = \frac{B}{net}
-  \label{eq:RHall}
+  R_H = \frac{V_H}{i} = \frac{B}{net}
+  \label{eq:RHall}
 \end{equation}
 
 \subsection{Signo de los Portadores y Datos Experimentales}
@@ -885,36 +885,36 @@ huecos (positivo):
 \begin{center}
 \rowcolors{2}{LightNavy!50}{white}
 \begin{tabular}{lccc}
-  \toprule
-  \textbf{Material} &
-  $\boldsymbol{n}\ (10^{28}/\mathrm{m}^3)$ &
-  \textbf{Signo de }$V_H$ &
-  \textbf{Portadores/átomo} \\
-  \midrule
-  Na              & 2.5                & $-$ & 0.99              \\
-  K               & 1.5                & $-$ & 1.1               \\
-  Cu              & 11                 & $-$ & 1.3               \\
-  Ag              & 7.4                & $-$ & 1.3               \\
-  Al              & 21                 & $-$ & 3.5               \\
-  Sb              & 0.31               & $-$ & 0.09              \\
-  Be              & 2.6                & $+$ & 2.2               \\
-  Zn              & 19                 & $+$ & 2.9               \\
-  Si (puro)       & $1.5\times10^{-12}$& $-$ & $3\times10^{-13}$ \\
-  Si (tipo\,\textit{n}) & $10^{-7}$   & $-$ & $2\times10^{-8}$  \\
-  \bottomrule
+  \toprule
+  \textbf{Material} &
+  $\boldsymbol{n}\ (10^{28}/\mathrm{m}^3)$ &
+  \textbf{Signo de }$V_H$ &
+  \textbf{Portadores/átomo} \\
+  \midrule
+  Na              & 2.5                & $-$ & 0.99              \\
+  K               & 1.5                & $-$ & 1.1               \\
+  Cu              & 11                 & $-$ & 1.3               \\
+  Ag              & 7.4                & $-$ & 1.3               \\
+  Al              & 21                 & $-$ & 3.5               \\
+  Sb              & 0.31               & $-$ & 0.09              \\
+  Be              & 2.6                & $+$ & 2.2               \\
+  Zn              & 19                 & $+$ & 2.9               \\
+  Si (puro)       & $1.5\times10^{-12}$& $-$ & $3\times10^{-13}$ \\
+  Si (tipo\,\textit{n}) & $10^{-7}$   & $-$ & $2\times10^{-8}$  \\
+  \bottomrule
 \end{tabular}
 \captionof{table}{Datos del efecto Hall (Tabla\,2, Cap.\,34).}
 \end{center}
 
 \begin{tcolorbox}[exbox,
-  title=Ejemplo — Cinta de Cu ($t=150\,\mu\mathrm{m}$,
-  $B=0.65\un{T}$, $i=23\un{A}$; $n=8.49\times10^{28}\un{m}^{-3}$)]
-  \[
-    V_H = \frac{iB}{net}
-        = \frac{(23)(0.65)}
-               {(8.49\times10^{28})(1.60\times10^{-19})(150\times10^{-6})}
-        = 7.3\times10^{-6}\un{V} = 7.3\,\mu\mathrm{V}
-  \]
+  title=Ejemplo — Cinta de Cu ($t=150\,\mu\mathrm{m}$,
+  $B=0.65\un{T}$, $i=23\un{A}$; $n=8.49\times10^{28}\un{m}^{-3}$)]
+  \[
+    V_H = \frac{iB}{net}
+        = \frac{(23)(0.65)}
+               {(8.49\times10^{28})(1.60\times10^{-19})(150\times10^{-6})}
+        = 7.3\times10^{-6}\un{V} = 7.3\,\mu\mathrm{V}
+  \]
 \end{tcolorbox}
 
 \subsection{El Efecto Hall Cuantizado (von Klitzing, 1980)}
@@ -924,20 +924,20 @@ bidimensionales (heterostructuras GaAs/AlGaAs), $R_H$ exhibe escalones
 planos con valores exactamente:
 
 \begin{equation}
-  \boxed{R_H = \frac{h}{je^2},\quad j=1,2,3,\ldots}
-  \label{eq:HallQ}
+  \boxed{R_H = \frac{h}{je^2},\quad j=1,2,3,\ldots}
+  \label{eq:HallQ}
 \end{equation}
 
 Primer escalón ($j=1$): $R_H=h/e^2=25\,812.806\un{\Omega}\approx25.8\un{k\Omega}$.
 
 \begin{tcolorbox}[propbox, title=Importancia metrológica — Premio Nobel 1985]
-  $h/e^2=25\,812.806\un{\Omega}$ se conoce con precisión mejor que
-  $1$ parte en $10^{10}$. Desde 1990 es el \textbf{estándar internacional
-  del ohm}.\\[4pt]
-  \textbf{Klaus von Klitzing} obtuvo el Nobel de Física 1985 por este
-  descubrimiento.\\[4pt]
-  En 1982 se descubrió el \textbf{Efecto Hall Cuantizado Fraccionario}
-  (Tsui, Störmer; Nobel 1998), con escalones en fracciones de $e^2$.
+  $h/e^2=25\,812.806\un{\Omega}$ se conoce con precisión mejor que
+  $1$ parte en $10^{10}$. Desde 1990 es el \textbf{estándar internacional
+  del ohm}.\\[4pt]
+  \textbf{Klaus von Klitzing} obtuvo el Nobel de Física 1985 por este
+  descubrimiento.\\[4pt]
+  En 1982 se descubrió el \textbf{Efecto Hall Cuantizado Fraccionario}
+  (Tsui, Störmer; Nobel 1998), con escalones en fracciones de $e^2$.
 \end{tcolorbox}
 
 % ============================================================
@@ -953,21 +953,21 @@ esta fuerza se transmite al conductor sólido.
 Para $N=nAL$ electrones en un segmento de longitud $L$,
 cargando $q=-e$, con velocidad de arrastre $\vB{v}_d$:
 \[
-  \vB{F} = -nALe\,\vB{v}_d\times\vB{B}
+  \vB{F} = -nALe\,\vB{v}_d\times\vB{B}
 \]
 
 Definiendo el vector $\vB{L}$ (magnitud $L$, dirección de la corriente)
 y usando $-nALe\vB{v}_d=i\vB{L}$:
 
 \begin{equation}
-  \boxed{\vB{F} = i\,\vB{L}\times\vB{B}}
-  \label{eq:Fcorriente}
+  \boxed{\vB{F} = i\,\vB{L}\times\vB{B}}
+  \label{eq:Fcorriente}
 \end{equation}
 
 Para elemento diferencial:
 \begin{equation}
-  d\vB{F} = i\,d\vB{s}\times\vB{B}
-  \label{eq:dFcorriente}
+  d\vB{F} = i\,d\vB{s}\times\vB{B}
+  \label{eq:dFcorriente}
 \end{equation}
 
 \figplaceholder{34-10}{Alambre flexible entre polos de imán: (a)\,sin corriente,
@@ -975,20 +975,20 @@ Para elemento diferencial:
 sentido (Fig.\,20 y 21 del texto, Cap.\,34).}
 
 \begin{tcolorbox}[exbox,
-  title=Ejemplo — Alambre en equilibrio ($m/L=46.6\un{g/m}$,
-  $i=28\un{A}$)]
-  \[
-    iLB = mg \implies B = \frac{(m/L)g}{i}
-            = \frac{(46.6\times10^{-3})(9.8)}{28}
-            = 1.6\times10^{-2}\un{T} = 16\un{mT}
-  \]
-  Este campo es $\approx400$ veces el campo magnético terrestre.
+  title=Ejemplo — Alambre en equilibrio ($m/L=46.6\un{g/m}$,
+  $i=28\un{A}$)]
+  \[
+    iLB = mg \implies B = \frac{(m/L)g}{i}
+            = \frac{(46.6\times10^{-3})(9.8)}{28}
+            = 1.6\times10^{-2}\un{T} = 16\un{mT}
+  \]
+  Este campo es $\approx400$ veces el campo magnético terrestre.
 \end{tcolorbox}
 
 \begin{tcolorbox}[propbox, title=Resultado notable — Trayectorias en campo uniforme]
-  La fuerza sobre \textit{cualquier} trayectoria conductora entre dos puntos
-  en un campo \textbf{uniforme} es igual a la fuerza sobre el segmento
-  \textbf{recto} que une esos puntos.
+  La fuerza sobre \textit{cualquier} trayectoria conductora entre dos puntos
+  en un campo \textbf{uniforme} es igual a la fuerza sobre el segmento
+  \textbf{recto} que une esos puntos.
 \end{tcolorbox}
 
 % ============================================================
@@ -1008,8 +1008,8 @@ La fuerza neta sobre la espira es \textbf{cero} ($\sum\vB{F}=\vB{0}$);
 no hay traslación. El torque es:
 
 \begin{equation}
-  \boxed{\tau = NiAB\sin\theta}
-  \label{eq:torque_espira}
+  \boxed{\tau = NiAB\sin\theta}
+  \label{eq:torque_espira}
 \end{equation}
 
 donde $A=ab$ y $N$ es el número de vueltas.
@@ -1022,7 +1022,7 @@ donde $A=ab$ y $N$ es el número de vueltas.
 Campo magnético radial $\Rightarrow$ $\theta=90^\circ$ siempre.
 Equilibrio entre torque magnético y resorte restaurador:
 \[
-  NiAB = \kappa\phi \implies i = \frac{\kappa}{NAB}\,\phi
+  NiAB = \kappa\phi \implies i = \frac{\kappa}{NAB}\,\phi
 \]
 
 La deflexión $\phi$ es proporcional a $i$ (escala calibrada).
@@ -1032,16 +1032,16 @@ con núcleo de hierro dulce para campo radial, resorte restaurador y aguja
 (Fig.\,27 del texto, Cap.\,34).}
 
 \begin{tcolorbox}[exbox,
-  title=Ejemplo — Galvanómetro (250 vueltas, $B=0.23\un{T}$,
-  $i=100\,\mu\mathrm{A}$, $\phi=28^\circ=0.49\un{rad}$)]
-  \[
-    A = (0.021)(0.012) = 2.52\times10^{-4}\un{m}^2
-  \]
-  \[
-    \kappa = \frac{NiAB}{\phi}
-           = \frac{(250)(100\times10^{-6})(2.52\times10^{-4})(0.23)}{0.49}
-           = 3.0\times10^{-6}\un{N\cdot m/rad}
-  \]
+  title=Ejemplo — Galvanómetro (250 vueltas, $B=0.23\un{T}$,
+  $i=100\,\mu\mathrm{A}$, $\phi=28^\circ=0.49\un{rad}$)]
+  \[
+    A = (0.021)(0.012) = 2.52\times10^{-4}\un{m}^2
+  \]
+  \[
+    \kappa = \frac{NiAB}{\phi}
+           = \frac{(250)(100\times10^{-6})(2.52\times10^{-4})(0.23)}{0.49}
+           = 3.0\times10^{-6}\un{N\cdot m/rad}
+  \]
 \end{tcolorbox}
 
 % ============================================================
@@ -1051,8 +1051,8 @@ con núcleo de hierro dulce para campo radial, resorte restaurador y aguja
 \subsection{Definición del Momento Dipolar Magnético}
 
 \begin{equation}
-  \boxed{\mu = NiA} \qquad [\mathrm{A\cdot m^2} = \mathrm{J/T}]
-  \label{eq:mu}
+  \boxed{\mu = NiA} \qquad [\mathrm{A\cdot m^2} = \mathrm{J/T}]
+  \label{eq:mu}
 \end{equation}
 
 Dirección: paralela a $\hat{n}$ (regla de la mano derecha aplicada a la
@@ -1061,13 +1061,13 @@ corriente en la espira).
 \subsection{Torque y Energía Potencial del Dipolo}
 
 \begin{equation}
-  \boxed{\vB{\tau} = \vB{\mu}\times\vB{B}}
-  \label{eq:tau_dipolo}
+  \boxed{\vB{\tau} = \vB{\mu}\times\vB{B}}
+  \label{eq:tau_dipolo}
 \end{equation}
 
 \begin{equation}
-  \boxed{U = -\vB{\mu}\cdot\vB{B} = -\mu B\cos\theta}
-  \label{eq:U_dipolo}
+  \boxed{U = -\vB{\mu}\cdot\vB{B} = -\mu B\cos\theta}
+  \label{eq:U_dipolo}
 \end{equation}
 
 Análogas a $\vB{\tau}=\vB{p}\times\vB{E}$ y $U=-\vB{p}\cdot\vB{E}$
@@ -1075,15 +1075,15 @@ del dipolo eléctrico.
 
 \textbf{Equilibrios:}
 \begin{itemize}[leftmargin=1.8em, itemsep=2pt]
-  \item $\theta=0^\circ$: $U=-\mu B$ (mínimo) $\Rightarrow$
-        equilibrio \textbf{estable}.
-  \item $\theta=180^\circ$: $U=+\mu B$ (máximo) $\Rightarrow$
-        equilibrio \textbf{inestable}.
+  \item $\theta=0^\circ$: $U=-\mu B$ (mínimo) $\Rightarrow$
+        equilibrio \textbf{estable}.
+  \item $\theta=180^\circ$: $U=+\mu B$ (máximo) $\Rightarrow$
+        equilibrio \textbf{inestable}.
 \end{itemize}
 
 \textbf{Trabajo para girar $180^\circ$:}
 \[
-  W = \Delta U = 2\mu B
+  W = \Delta U = 2\mu B
 \]
 
 \subsection{Valores de Momentos Dipolares Magnéticos}
@@ -1091,34 +1091,34 @@ del dipolo eléctrico.
 \begin{center}
 \rowcolors{2}{LightNavy!50}{white}
 \begin{tabular}{lc}
-  \toprule
-  \textbf{Sistema} & $\boldsymbol{\mu}$ \textbf{(J/T)} \\
-  \midrule
-  Núcleo del átomo de H        & $2.0\times10^{-28}$ \\
-  El protón                    & $1.4\times10^{-26}$ \\
-  El electrón                  & $9.3\times10^{-24}$ \\
-  El átomo de nitrógeno        & $2.8\times10^{-23}$ \\
-  Bobina pequeña típica        & $5.4\times10^{-6}$  \\
-  Imán de barra pequeño        & $5$                 \\
-  Bobina superconductora       & $400$               \\
-  La Tierra                    & $8.0\times10^{22}$  \\
-  \bottomrule
+  \toprule
+  \textbf{Sistema} & $\boldsymbol{\mu}$ \textbf{(J/T)} \\
+  \midrule
+  Núcleo del átomo de H        & $2.0\times10^{-28}$ \\
+  El protón                    & $1.4\times10^{-26}$ \\
+  El electrón                  & $9.3\times10^{-24}$ \\
+  El átomo de nitrógeno        & $2.8\times10^{-23}$ \\
+  Bobina pequeña típica        & $5.4\times10^{-6}$  \\
+  Imán de barra pequeño        & $5$                 \\
+  Bobina superconductora       & $400$               \\
+  La Tierra                    & $8.0\times10^{22}$  \\
+  \bottomrule
 \end{tabular}
 \captionof{table}{Momentos dipolares magnéticos (Tabla\,3, Cap.\,34).}
 \end{center}
 
 \begin{tcolorbox}[propbox,
-  title=Consecuencias de la comparación nuclear vs.\ atómica]
-  Los momentos nucleares son $3$–$6$ órdenes de magnitud \textbf{menores}
-  que los atómicos:
-  \begin{enumerate}[leftmargin=1.8em, itemsep=2pt]
-    \item Los electrones \textbf{no pueden} ser constituyentes del núcleo.
-    \item Los efectos magnéticos ordinarios de los materiales están
-          gobernados por el magnetismo \textbf{atómico} (electrónico).
-    \item Para alinear dipolos nucleares (RMN) se requieren campos
-          $3$–$6$ órdenes de magnitud \textbf{mayores} que para dipolos
-          atómicos a igual temperatura.
-  \end{enumerate}
+  title=Consecuencias de la comparación nuclear vs.\ atómica]
+  Los momentos nucleares son $3$–$6$ órdenes de magnitud \textbf{menores}
+  que los atómicos:
+  \begin{enumerate}[leftmargin=1.8em, itemsep=2pt]
+    \item Los electrones \textbf{no pueden} ser constituyentes del núcleo.
+    \item Los efectos magnéticos ordinarios de los materiales están
+          gobernados por el magnetismo \textbf{atómico} (electrónico).
+    \item Para alinear dipolos nucleares (RMN) se requieren campos
+          $3$–$6$ órdenes de magnitud \textbf{mayores} que para dipolos
+          atómicos a igual temperatura.
+  \end{enumerate}
 \end{tcolorbox}
 
 % ============================================================
@@ -1130,42 +1130,42 @@ del dipolo eléctrico.
 \renewcommand{\arraystretch}{1.7}
 \rowcolors{2}{LightNavy!50}{white}
 \begin{longtable}{p{0.38\textwidth}p{0.52\textwidth}}
-  \toprule
-  \textbf{Ecuación} & \textbf{Descripción} \\
-  \midrule
-  $\displaystyle\vB{F}=q\,\vB{v}\times\vB{B}$ &
-        Fuerza magnética sobre carga en movimiento \\
-  $\displaystyle\vB{F}=q\vB{E}+q\,\vB{v}\times\vB{B}$ &
-        Fuerza de Lorentz \\
-  $\displaystyle B=F_\perp/(qv)$ &
-        Definición operacional de $B$ \\
-  $\displaystyle r=mv/(|q|B)=p/(|q|B)$ &
-        Radio de trayectoria circular \\
-  $\displaystyle\omega=|q|B/m$ &
-        Velocidad angular ciclotrón \\
-  $\displaystyle\nu=|q|B/(2\pi m)$ &
-        Frecuencia ciclotrón (no relativista) \\
-  $\displaystyle K=q^2B^2R^2/(2m)$ &
-        Energía máxima en ciclotrón \\
-  $\displaystyle v=E/B$ &
-        Velocidad en selector de velocidad \\
-  $\displaystyle n=iB/(etV_H)$ &
-        Densidad de portadores (efecto Hall) \\
-  $\displaystyle R_H=h/(je^2)$ &
-        Efecto Hall cuantizado \\
-  $\displaystyle\vB{F}=i\,\vB{L}\times\vB{B}$ &
-        Fuerza sobre segmento de corriente \\
-  $\displaystyle d\vB{F}=i\,d\vB{s}\times\vB{B}$ &
-        Fuerza sobre elemento diferencial \\
-  $\displaystyle\tau=NiAB\sin\theta$ &
-        Torque sobre espira (escalar) \\
-  $\displaystyle\vB{\tau}=\vB{\mu}\times\vB{B}$ &
-        Torque sobre espira (vectorial) \\
-  $\displaystyle\mu=NiA$ &
-        Momento dipolar magnético \\
-  $\displaystyle U=-\vB{\mu}\cdot\vB{B}$ &
-        Energía potencial del dipolo magnético \\
-  \bottomrule
+  \toprule
+  \textbf{Ecuación} & \textbf{Descripción} \\
+  \midrule
+  $\displaystyle\vB{F}=q\,\vB{v}\times\vB{B}$ &
+        Fuerza magnética sobre carga en movimiento \\
+  $\displaystyle\vB{F}=q\vB{E}+q\,\vB{v}\times\vB{B}$ &
+        Fuerza de Lorentz \\
+  $\displaystyle B=F_\perp/(qv)$ &
+        Definición operacional de $B$ \\
+  $\displaystyle r=mv/(|q|B)=p/(|q|B)$ &
+        Radio de trayectoria circular \\
+  $\displaystyle\omega=|q|B/m$ &
+        Velocidad angular ciclotrón \\
+  $\displaystyle\nu=|q|B/(2\pi m)$ &
+        Frecuencia ciclotrón (no relativista) \\
+  $\displaystyle K=q^2B^2R^2/(2m)$ &
+        Energía máxima en ciclotrón \\
+  $\displaystyle v=E/B$ &
+        Velocidad en selector de velocidad \\
+  $\displaystyle n=iB/(etV_H)$ &
+        Densidad de portadores (efecto Hall) \\
+  $\displaystyle R_H=h/(je^2)$ &
+        Efecto Hall cuantizado \\
+  $\displaystyle\vB{F}=i\,\vB{L}\times\vB{B}$ &
+        Fuerza sobre segmento de corriente \\
+  $\displaystyle d\vB{F}=i\,d\vB{s}\times\vB{B}$ &
+        Fuerza sobre elemento diferencial \\
+  $\displaystyle\tau=NiAB\sin\theta$ &
+        Torque sobre espira (escalar) \\
+  $\displaystyle\vB{\tau}=\vB{\mu}\times\vB{B}$ &
+        Torque sobre espira (vectorial) \\
+  $\displaystyle\mu=NiA$ &
+        Momento dipolar magnético \\
+  $\displaystyle U=-\vB{\mu}\cdot\vB{B}$ &
+        Energía potencial del dipolo magnético \\
+  \bottomrule
 \end{longtable}
 \end{center}
 
@@ -1173,7 +1173,7 @@ del dipolo eléctrico.
 
 % ==============================================================
 % ==============================================================
-%  CAPÍTULO 35 — LA LEY DE AMPÈRE
+%  CAPÍTULO 35 — LA LEY DE AMPÈRE
 % ==============================================================
 % ==============================================================
 \chapter{La Ley de Amp\`{e}re}
@@ -1202,20 +1202,20 @@ alinea con ese campo.
 \begin{center}
 \renewcommand{\arraystretch}{1.5}
 \begin{tabular}{p{0.42\textwidth}p{0.42\textwidth}}
-  \toprule
-  \textbf{Electrostática} & \textbf{Magnetostática} \\
-  \midrule
-  Ley de Coulomb: campo de elemento de carga $dq$:
-  $d\vB{E}=\dfrac{1}{4\pi\varepsilon_0}\dfrac{dq}{r^2}\hat{u}_r$
-  &
-  Ley de Biot-Savart: campo de elemento de corriente $ids$:
-  $d\vB{B}=\dfrac{\mu_0}{4\pi}\dfrac{ids\times\hat{u}_r}{r^2}$
-  \\[8pt]
-  Ley de Gauss (simetría alta): $\oint\vB{E}\cdot d\vB{A}=q_\text{enc}/\varepsilon_0$
-  &
-  Ley de Ampère (simetría alta): $\oint\vB{B}\cdot d\vB{s}=\mu_0 i$
-  \\
-  \bottomrule
+  \toprule
+  \textbf{Electrostática} & \textbf{Magnetostática} \\
+  \midrule
+  Ley de Coulomb: campo de elemento de carga $dq$:
+  $d\vB{E}=\dfrac{1}{4\pi\varepsilon_0}\dfrac{dq}{r^2}\hat{u}_r$
+  &
+  Ley de Biot-Savart: campo de elemento de corriente $ids$:
+  $d\vB{B}=\dfrac{\mu_0}{4\pi}\dfrac{ids\times\hat{u}_r}{r^2}$
+  \\[8pt]
+  Ley de Gauss (simetría alta): $\oint\vB{E}\cdot d\vB{A}=q_\text{enc}/\varepsilon_0$
+  &
+  Ley de Ampère (simetría alta): $\oint\vB{B}\cdot d\vB{s}=\mu_0 i$
+  \\
+  \bottomrule
 \end{tabular}
 \end{center}
 
@@ -1229,49 +1229,49 @@ La constante de proporcionalidad en la ley de la fuerza magnética se
 define fijando:
 
 \begin{equation}
-  k = \frac{\mu_0}{4\pi} = 10^{-7}\un{T\cdot m/A}
+  k = \frac{\mu_0}{4\pi} = 10^{-7}\un{T\cdot m/A}
 \end{equation}
 
 donde $\mu_0$ es la \textbf{constante de permeabilidad magnética del vacío}:
 
 \begin{equation}
-  \boxed{\mu_0 = 4\pi\times10^{-7}\un{T\cdot m/A}
-        \approx 1.2566\times10^{-6}\un{T\cdot m/A}}
-  \label{eq:mu0}
+  \boxed{\mu_0 = 4\pi\times10^{-7}\un{T\cdot m/A}
+        \approx 1.2566\times10^{-6}\un{T\cdot m/A}}
+  \label{eq:mu0}
 \end{equation}
 
 Esta constante define la unidad de corriente (el ampere) a través de la ley
 de la fuerza entre conductores paralelos. Se relaciona con $\varepsilon_0$
 a través de la velocidad de la luz:
 \[
-  c = \frac{1}{\sqrt{\mu_0\varepsilon_0}}
+  c = \frac{1}{\sqrt{\mu_0\varepsilon_0}}
 \]
 
 \subsection{Enunciado Formal de la Ley de Biot-Savart}
 
 \begin{tcolorbox}[defbox, title=Ley de Biot-Savart]
-  El campo magnético $d\vB{B}$ en un punto $P$ creado por un elemento de
-  corriente $i\,d\vB{s}$ a una distancia $r$ es:
-  \begin{equation}
-    \boxed{d\vB{B} = \frac{\mu_0}{4\pi}\,
-      \frac{i\,d\vB{s}\times\hat{u}_r}{r^2}
-      = \frac{\mu_0}{4\pi}\,
-      \frac{i\,d\vB{s}\times\vB{r}}{r^3}}
-    \label{eq:BiotSavart}
-  \end{equation}
-  donde $\vB{r}$ apunta del elemento de corriente al punto $P$ y
-  $\hat{u}_r=\vB{r}/r$.\\[5pt]
-  \textbf{Magnitud:}
-  \begin{equation}
-    dB = \frac{\mu_0}{4\pi}\,\frac{i\,ds\sin\theta}{r^2}
-    \label{eq:BSmag}
-  \end{equation}
-  donde $\theta$ es el ángulo entre $d\vB{s}$ y $\vB{r}$.\\[5pt]
-  \textbf{Campo total:}
-  \begin{equation}
-    \vB{B} = \frac{\mu_0}{4\pi}\int\frac{i\,d\vB{s}\times\hat{u}_r}{r^2}
-    \label{eq:BSintegral}
-  \end{equation}
+  El campo magnético $d\vB{B}$ en un punto $P$ creado por un elemento de
+  corriente $i\,d\vB{s}$ a una distancia $r$ es:
+  \begin{equation}
+    \boxed{d\vB{B} = \frac{\mu_0}{4\pi}\,
+      \frac{i\,d\vB{s}\times\hat{u}_r}{r^2}
+      = \frac{\mu_0}{4\pi}\,
+      \frac{i\,d\vB{s}\times\vB{r}}{r^3}}
+    \label{eq:BiotSavart}
+  \end{equation}
+  donde $\vB{r}$ apunta del elemento de corriente al punto $P$ y
+  $\hat{u}_r=\vB{r}/r$.\\[5pt]
+  \textbf{Magnitud:}
+  \begin{equation}
+    dB = \frac{\mu_0}{4\pi}\,\frac{i\,ds\sin\theta}{r^2}
+    \label{eq:BSmag}
+  \end{equation}
+  donde $\theta$ es el ángulo entre $d\vB{s}$ y $\vB{r}$.\\[5pt]
+  \textbf{Campo total:}
+  \begin{equation}
+    \vB{B} = \frac{\mu_0}{4\pi}\int\frac{i\,d\vB{s}\times\hat{u}_r}{r^2}
+    \label{eq:BSintegral}
+  \end{equation}
 \end{tcolorbox}
 
 \figplaceholder{35-2}{Geometría de la ley de Biot-Savart: elemento de corriente
@@ -1292,14 +1292,14 @@ Tomando $x$ como variable de integración a lo largo del alambre,
 con $r=\sqrt{x^2+R^2}$ y $\sin\theta=R/\sqrt{x^2+R^2}$:
 
 \[
-  B = \frac{\mu_0 i}{4\pi}\int_{-\infty}^{+\infty}
-      \frac{R\,dx}{(x^2+R^2)^{3/2}}
-    = \frac{\mu_0 i}{4\pi}\cdot\frac{2}{R}
+  B = \frac{\mu_0 i}{4\pi}\int_{-\infty}^{+\infty}
+      \frac{R\,dx}{(x^2+R^2)^{3/2}}
+    = \frac{\mu_0 i}{4\pi}\cdot\frac{2}{R}
 \]
 
 \begin{equation}
-  \boxed{B = \frac{\mu_0 i}{2\pi R}}
-  \label{eq:Balamlargo}
+  \boxed{B = \frac{\mu_0 i}{2\pi R}}
+  \label{eq:Balamlargo}
 \end{equation}
 
 El campo disminuye como $1/R$ con la distancia $R$ al alambre.
@@ -1313,8 +1313,8 @@ Por simetría, las componentes transversales de $d\vB{B}$ se cancelan;
 solo sobrevive la componente axial:
 
 \begin{equation}
-  \boxed{B = \frac{\mu_0 i R^2}{2(R^2+z^2)^{3/2}}}
-  \label{eq:Banillo}
+  \boxed{B = \frac{\mu_0 i R^2}{2(R^2+z^2)^{3/2}}}
+  \label{eq:Banillo}
 \end{equation}
 
 \figplaceholder{35-4}{Anillo circular de corriente $i$ de radio $R$. Cálculo
@@ -1323,12 +1323,12 @@ $d\vB{B}_\parallel$ y $d\vB{B}_\perp$ (Fig.\,6 del texto, Cap.\,35).}
 
 \textbf{Casos especiales:}
 \begin{itemize}[leftmargin=1.8em, itemsep=2pt]
-  \item Centro del anillo ($z=0$):
-    $\displaystyle B = \frac{\mu_0 i}{2R}$
-  \item Punto lejano ($z\gg R$):
-    $\displaystyle B \approx \frac{\mu_0 i R^2}{2z^3}
-                           = \frac{\mu_0}{2\pi}\,\frac{\mu}{z^3}$
-    (campo dipolar con $\mu=iA$)
+  \item Centro del anillo ($z=0$):
+    $\displaystyle B = \frac{\mu_0 i}{2R}$
+  \item Punto lejano ($z\gg R$):
+    $\displaystyle B \approx \frac{\mu_0 i R^2}{2z^3}
+                           = \frac{\mu_0}{2\pi}\,\frac{\mu}{z^3}$
+    (campo dipolar con $\mu=iA$)
 \end{itemize}
 
 \subsection{Tabla Comparativa: Dipolos Eléctrico y Magnético}
@@ -1337,24 +1337,24 @@ $d\vB{B}_\parallel$ y $d\vB{B}_\perp$ (Fig.\,6 del texto, Cap.\,35).}
 \renewcommand{\arraystretch}{1.6}
 \rowcolors{2}{LightNavy!50}{white}
 \begin{tabular}{p{0.30\textwidth}p{0.28\textwidth}p{0.28\textwidth}}
-  \toprule
-  \textbf{Propiedad} &
-  \textbf{Dipolo eléctrico} &
-  \textbf{Dipolo magnético} \\
-  \midrule
-  Torque en campo externo &
-  $\vB{\tau}=\vB{p}\times\vB{E}$ &
-  $\vB{\tau}=\vB{\mu}\times\vB{B}$ \\
-  Energía en campo externo &
-  $U=-\vB{p}\cdot\vB{E}$ &
-  $U=-\vB{\mu}\cdot\vB{B}$ \\
-  Campo axial ($z\gg$) &
-  $\displaystyle E=\frac{p}{2\pi\varepsilon_0 z^3}$ &
-  $\displaystyle B=\frac{\mu_0\mu}{2\pi z^3}$ \\
-  Campo ecuatorial ($x\gg$) &
-  $\displaystyle E=\frac{p}{4\pi\varepsilon_0 x^3}$ &
-  $\displaystyle B=\frac{\mu_0\mu}{4\pi x^3}$ \\
-  \bottomrule
+  \toprule
+  \textbf{Propiedad} &
+  \textbf{Dipolo eléctrico} &
+  \textbf{Dipolo magnético} \\
+  \midrule
+  Torque en campo externo &
+  $\vB{\tau}=\vB{p}\times\vB{E}$ &
+  $\vB{\tau}=\vB{\mu}\times\vB{B}$ \\
+  Energía en campo externo &
+  $U=-\vB{p}\cdot\vB{E}$ &
+  $U=-\vB{\mu}\cdot\vB{B}$ \\
+  Campo axial ($z\gg$) &
+  $\displaystyle E=\frac{p}{2\pi\varepsilon_0 z^3}$ &
+  $\displaystyle B=\frac{\mu_0\mu}{2\pi z^3}$ \\
+  Campo ecuatorial ($x\gg$) &
+  $\displaystyle E=\frac{p}{4\pi\varepsilon_0 x^3}$ &
+  $\displaystyle B=\frac{\mu_0\mu}{4\pi x^3}$ \\
+  \bottomrule
 \end{tabular}
 \captionof{table}{Analogía entre dipolo eléctrico y dipolo magnético
 (Tabla\,1, Cap.\,35).}
@@ -1366,8 +1366,8 @@ Para una cinta de anchura $a$ y corriente $i$, el campo en el punto $P$
 sobre la bisectriz perpendicular a distancia $R$:
 
 \begin{equation}
-  B = \frac{\mu_0 i}{\pi a}\arctan\!\left(\frac{a}{2R}\right)
-  \label{eq:Bcinta}
+  B = \frac{\mu_0 i}{\pi a}\arctan\!\left(\frac{a}{2R}\right)
+  \label{eq:Bcinta}
 \end{equation}
 
 Para $R\gg a$: $B\approx\mu_0 i/(2\pi R)$ (recupera el resultado del
@@ -1388,10 +1388,10 @@ alrededor de un alambre recto largo con corriente
 (Fig.\,9 del texto, Cap.\,35).}
 
 \begin{tcolorbox}[notebox, title=Principio para calcular fuerzas]
-  La fuerza magnética sobre un conductor se calcula usando únicamente el
-  \textbf{campo externo} en que está inmerso. El campo que el propio
-  conductor genera no ejerce fuerza sobre sí mismo (igual que la gravedad
-  terrestre no actúa sobre la Tierra misma).
+  La fuerza magnética sobre un conductor se calcula usando únicamente el
+  \textbf{campo externo} en que está inmerso. El campo que el propio
+  conductor genera no ejerce fuerza sobre sí mismo (igual que la gravedad
+  terrestre no actúa sobre la Tierra misma).
 \end{tcolorbox}
 
 % ============================================================
@@ -1406,34 +1406,34 @@ $\vB{F}_{21}$ de atracción (Fig.\,11 del texto, Cap.\,35).}
 
 El alambre 1 crea en la posición del alambre 2 (separación $d$):
 \[
-  B_1 = \frac{\mu_0 i_1}{2\pi d}
+  B_1 = \frac{\mu_0 i_1}{2\pi d}
 \]
 
 La fuerza sobre longitud $L$ del alambre 2:
 \begin{equation}
-  \boxed{F_{21} = \frac{\mu_0 L\, i_1 i_2}{2\pi d}}
-  \label{eq:Fparalelos}
+  \boxed{F_{21} = \frac{\mu_0 L\, i_1 i_2}{2\pi d}}
+  \label{eq:Fparalelos}
 \end{equation}
 
 \begin{tcolorbox}[propbox, title=Regla general de interacción entre corrientes]
-  \begin{itemize}[leftmargin=1.5em, itemsep=2pt]
-    \item Corrientes \textbf{paralelas} (mismo sentido)
-          $\Rightarrow$ se \textbf{atraen}.
-    \item Corrientes \textbf{antiparalelas} (sentidos opuestos)
-          $\Rightarrow$ se \textbf{repelen}.
-  \end{itemize}
-  Esta regla es \textit{opuesta} a la de las cargas eléctricas
-  (cargas iguales se repelen, pero corrientes iguales se atraen).
+  \begin{itemize}[leftmargin=1.5em, itemsep=2pt]
+    \item Corrientes \textbf{paralelas} (mismo sentido)
+          $\Rightarrow$ se \textbf{atraen}.
+    \item Corrientes \textbf{antiparalelas} (sentidos opuestos)
+          $\Rightarrow$ se \textbf{repelen}.
+  \end{itemize}
+  Esta regla es \textit{opuesta} a la de las cargas eléctricas
+  (cargas iguales se repelen, pero corrientes iguales se atraen).
 \end{tcolorbox}
 
 \subsection{Definición del Ampere}
 
 \begin{tcolorbox}[defbox, title=Definición SI del ampere]
-  Dados dos alambres paralelos, de sección transversal circular
-  despreciable, separados $1\un{m}$ en el vacío: se define
-  $\mathbf{1\un{ampere}}$ como la corriente en cada alambre que
-  produce una fuerza de $\mathbf{2\times10^{-7}\un{N}}$ por metro
-  de longitud.
+  Dados dos alambres paralelos, de sección transversal circular
+  despreciable, separados $1\un{m}$ en el vacío: se define
+  $\mathbf{1\un{ampere}}$ como la corriente en cada alambre que
+  produce una fuerza de $\mathbf{2\times10^{-7}\un{N}}$ por metro
+  de longitud.
 \end{tcolorbox}
 
 % ============================================================
@@ -1449,13 +1449,13 @@ una ley que aprovecha la \textbf{simetría} para simplificar el
 cálculo de $\vB{B}$:
 
 \begin{tcolorbox}[defbox, title=Ley de Amp\`{e}re]
-  \begin{equation}
-    \boxed{\oint\vB{B}\cdot d\vB{s} = \mu_0\, i_\text{enc}}
-    \label{eq:Ampere}
-  \end{equation}
-  donde $i_\text{enc}$ es la corriente neta \textbf{encerrada} por
-  la trayectoria cerrada (anillo amperiano), y la integral de línea
-  se evalúa a lo largo de dicho anillo.
+  \begin{equation}
+    \boxed{\oint\vB{B}\cdot d\vB{s} = \mu_0\, i_\text{enc}}
+    \label{eq:Ampere}
+  \end{equation}
+  donde $i_\text{enc}$ es la corriente neta \textbf{encerrada} por
+  la trayectoria cerrada (anillo amperiano), y la integral de línea
+  se evalúa a lo largo de dicho anillo.
 \end{tcolorbox}
 
 \textbf{La ley de Ampère es una de las cuatro ecuaciones de Maxwell.}
@@ -1467,12 +1467,12 @@ Análogo a la superficie gaussiana, se construye una
 \textbf{curva cerrada imaginaria} (anillo amperiano) bien elegida:
 
 \begin{enumerate}[leftmargin=2.2em, itemsep=4pt]
-  \item Elegir el anillo de modo que $\vB{B}$ sea
-        \textbf{constante en magnitud} sobre la trayectoria,
-        y \textbf{tangente} a ella (o perpendicular).
-  \item La integral se simplifica: $\oint B\,ds=B\cdot(\text{longitud})$.
-  \item La corriente encerrada $i_\text{enc}$ solo incluye las corrientes
-        que \textbf{atraviesan} la superficie delimitada por el anillo.
+  \item Elegir el anillo de modo que $\vB{B}$ sea
+        \textbf{constante en magnitud} sobre la trayectoria,
+        y \textbf{tangente} a ella (o perpendicular).
+  \item La integral se simplifica: $\oint B\,ds=B\cdot(\text{longitud})$.
+  \item La corriente encerrada $i_\text{enc}$ solo incluye las corrientes
+        que \textbf{atraviesan} la superficie delimitada por el anillo.
 \end{enumerate}
 
 \textbf{Convención de signos:} regla de la mano derecha — si los dedos se
@@ -1497,12 +1497,12 @@ Por simetría: $\vB{B}$ constante y tangente en todo el anillo.
 $\theta=0^\circ$ en toda la trayectoria.
 
 \[
-  \oint B\,ds = B(2\pi r) = \mu_0 i
+  \oint B\,ds = B(2\pi r) = \mu_0 i
 \]
 
 \begin{equation}
-  \boxed{B = \frac{\mu_0 i}{2\pi r}}
-  \label{eq:Bext_alambre}
+  \boxed{B = \frac{\mu_0 i}{2\pi r}}
+  \label{eq:Bext_alambre}
 \end{equation}
 
 Idéntico al resultado de Biot-Savart, obtenido con mucho menos esfuerzo.
@@ -1516,21 +1516,21 @@ largo. $\vB{B}$ es tangente y constante en todo el anillo
 Para $r<R$ (dentro del alambre de radio $R$ con corriente $i$ uniforme):
 
 \[
-  B(2\pi r) = \mu_0 i\,\frac{\pi r^2}{\pi R^2}
+  B(2\pi r) = \mu_0 i\,\frac{\pi r^2}{\pi R^2}
 \]
 
 \begin{equation}
-  \boxed{B = \frac{\mu_0 i\,r}{2\pi R^2}} \qquad (r\le R)
-  \label{eq:Bint_alambre}
+  \boxed{B = \frac{\mu_0 i\,r}{2\pi R^2}} \qquad (r\le R)
+  \label{eq:Bint_alambre}
 \end{equation}
 
 \begin{tcolorbox}[propbox, title=Campo magnético dentro y fuera del alambre]
-  \begin{itemize}[leftmargin=1.5em, itemsep=2pt]
-    \item Para $r<R$ (interior): $B\propto r$ (crece linealmente).
-    \item Para $r=R$ (superficie): ambas expresiones coinciden.
-    \item Para $r>R$ (exterior): $B\propto 1/r$ (decrece).
-    \item El campo \textbf{máximo} ocurre en la superficie $r=R$.
-  \end{itemize}
+  \begin{itemize}[leftmargin=1.5em, itemsep=2pt]
+    \item Para $r<R$ (interior): $B\propto r$ (crece linealmente).
+    \item Para $r=R$ (superficie): ambas expresiones coinciden.
+    \item Para $r>R$ (exterior): $B\propto 1/r$ (decrece).
+    \item El campo \textbf{máximo} ocurre en la superficie $r=R$.
+  \end{itemize}
 \end{tcolorbox}
 
 \figplaceholder{35-9}{Gráfica de $B$ en función de $r$ para un alambre cilíndrico
@@ -1561,18 +1561,18 @@ contribución nula por perpendicularidad o por $B=0$ exterior.
 Con $n$ espiras por unidad de longitud y corriente $i_0n h$ encerrada:
 
 \begin{equation}
-  Bh = \mu_0 i_0 n h \implies
-  \boxed{B = \mu_0 i_0 n}
-  \label{eq:Bsolenoide}
+  Bh = \mu_0 i_0 n h \implies
+  \boxed{B = \mu_0 i_0 n}
+  \label{eq:Bsolenoide}
 \end{equation}
 
 \begin{tcolorbox}[propbox, title=Propiedades del campo en el solenoide ideal]
-  \begin{itemize}[leftmargin=1.5em, itemsep=2pt]
-    \item $B$ es \textbf{uniforme} en toda la sección transversal interior.
-    \item $B$ es independiente del diámetro y la longitud del solenoide.
-    \item $B$ depende únicamente de $i_0$ y $n$ (espiras/m).
-    \item $B_\text{exterior}\approx0$ (solenoide práctico largo).
-  \end{itemize}
+  \begin{itemize}[leftmargin=1.5em, itemsep=2pt]
+    \item $B$ es \textbf{uniforme} en toda la sección transversal interior.
+    \item $B$ es independiente del diámetro y la longitud del solenoide.
+    \item $B$ depende únicamente de $i_0$ y $n$ (espiras/m).
+    \item $B_\text{exterior}\approx0$ (solenoide práctico largo).
+  \end{itemize}
 \end{tcolorbox}
 
 \figplaceholder{35-11}{Anillo amperiano rectangular $abcd$ en el solenoide ideal.
@@ -1580,16 +1580,16 @@ Los segmentos $bc$ y $da$ son perpendiculares a $\vB{B}$; el segmento $cd$
 está en la región exterior donde $B=0$ (Fig.\,19 del texto, Cap.\,35).}
 
 \begin{tcolorbox}[exbox,
-  title=Ejemplo — Solenoide ($L=1.23\un{m}$, $d=3.55\un{cm}$,
-  5 capas de 850 espiras, $i_0=5.57\un{A}$)]
-  \[
-    n = \frac{5\times850}{1.23\un{m}} = 3\,455\un{espiras/m}
-  \]
-  \[
-    B = \mu_0 i_0 n
-      = (4\pi\times10^{-7})(5.57)(3\,455)
-      = 2.42\times10^{-2}\un{T} = 24.2\un{mT}
-  \]
+  title=Ejemplo — Solenoide ($L=1.23\un{m}$, $d=3.55\un{cm}$,
+  5 capas de 850 espiras, $i_0=5.57\un{A}$)]
+  \[
+    n = \frac{5\times850}{1.23\un{m}} = 3\,455\un{espiras/m}
+  \]
+  \[
+    B = \mu_0 i_0 n
+      = (4\pi\times10^{-7})(5.57)(3\,455)
+      = 2.42\times10^{-2}\un{T} = 24.2\un{mT}
+  \]
 \end{tcolorbox}
 
 \subsection{El Toroide}
@@ -1605,18 +1605,18 @@ Anillo amperiano: círculo de radio $r$ concéntrico con el eje del toroide.
 La corriente total encerrada es $Ni_0$.
 
 \begin{equation}
-  B(2\pi r) = \mu_0 i_0 N \implies
-  \boxed{B = \frac{\mu_0 i_0 N}{2\pi r}} \qquad (a\le r\le b)
-  \label{eq:Btoroide}
+  B(2\pi r) = \mu_0 i_0 N \implies
+  \boxed{B = \frac{\mu_0 i_0 N}{2\pi r}} \qquad (a\le r\le b)
+  \label{eq:Btoroide}
 \end{equation}
 
 \begin{itemize}[leftmargin=1.8em, itemsep=2pt]
-  \item $B$ \textbf{no} es uniforme en la sección transversal del toroide:
-        varía con $r$.
-  \item $B=0$ en el exterior ($r>b$ ó $r<a$) del toroide ideal.
-  \item Para $a\approx b$ (toroide muy delgado), el denominador $2\pi r$
-        es la circunferencia media y $N/(2\pi r)=n$ (espiras/m), de modo
-        que $B\approx\mu_0 i_0 n$: mismo que el solenoide.
+  \item $B$ \textbf{no} es uniforme en la sección transversal del toroide:
+        varía con $r$.
+  \item $B=0$ en el exterior ($r>b$ ó $r<a$) del toroide ideal.
+  \item Para $a\approx b$ (toroide muy delgado), el denominador $2\pi r$
+        es la circunferencia media y $N/(2\pi r)=n$ (espiras/m), de modo
+        que $B\approx\mu_0 i_0 n$: mismo que el solenoide.
 \end{itemize}
 
 \textbf{Aplicación:} el toroide es el componente central del
@@ -1632,11 +1632,11 @@ Una partícula de carga $q>0$ en reposo junto a un alambre con corriente $i$
 (Fig.\,22a del texto):
 
 \begin{itemize}[leftmargin=1.8em, itemsep=2pt]
-  \item El alambre es eléctricamente neutro: $\lambda_+=|\lambda_-|$,
-        campo eléctrico neto $\vB{E}=\vB{0}$.
-  \item Existe campo $\vB{B}\ne\vB{0}$, pero la partícula está en reposo
-        $\Rightarrow$ no hay fuerza magnética.
-  \item \textbf{Conclusión en $S$:} fuerza neta $= 0$.
+  \item El alambre es eléctricamente neutro: $\lambda_+=|\lambda_-|$,
+        campo eléctrico neto $\vB{E}=\vB{0}$.
+  \item Existe campo $\vB{B}\ne\vB{0}$, pero la partícula está en reposo
+        $\Rightarrow$ no hay fuerza magnética.
+  \item \textbf{Conclusión en $S$:} fuerza neta $= 0$.
 \end{itemize}
 
 \subsection{Análisis en el Marco $S'$ (en Movimiento a $v_d$)}
@@ -1645,30 +1645,30 @@ El marco $S'$ se mueve paralelo al alambre a la velocidad de arrastre $v_d$
 de los electrones:
 
 \begin{itemize}[leftmargin=1.8em, itemsep=2pt]
-  \item En $S'$: los electrones están en reposo; los iones se mueven.
-  \item La partícula cargada se mueve $\Rightarrow$ experimenta fuerza
-        magnética $F_B$ alejándose del alambre.
-  \item Por la \textbf{contracción de Lorentz}: la barra de iones
-        (en movimiento en $S'$) queda más corta $\Rightarrow$
-        $\lambda'_+>|\lambda'_-|$.
-  \item Hay densidad de carga neta positiva en $S'$ $\Rightarrow$
-        campo eléctrico $F_E$ que repele a $q$.
-  \item Cálculo detallado: $F_E$ cancela exactamente a $F_B$
-        $\Rightarrow$ fuerza neta $=0$ en $S'$ también.
+  \item En $S'$: los electrones están en reposo; los iones se mueven.
+  \item La partícula cargada se mueve $\Rightarrow$ experimenta fuerza
+        magnética $F_B$ alejándose del alambre.
+  \item Por la \textbf{contracción de Lorentz}: la barra de iones
+        (en movimiento en $S'$) queda más corta $\Rightarrow$
+        $\lambda'_+>|\lambda'_-|$.
+  \item Hay densidad de carga neta positiva en $S'$ $\Rightarrow$
+        campo eléctrico $F_E$ que repele a $q$.
+  \item Cálculo detallado: $F_E$ cancela exactamente a $F_B$
+        $\Rightarrow$ fuerza neta $=0$ en $S'$ también.
 \end{itemize}
 
 \begin{tcolorbox}[propbox,
-  title=Conclusión fundamental — Relatividad del electromagnetismo]
-  Los campos eléctrico y magnético \textbf{no son entidades independientes}.
-  Un campo puramente eléctrico en un marco tiene componentes magnéticas en
-  otro, y viceversa. Las leyes de Maxwell son
-  \textbf{invariantes bajo la transformación de Lorentz}.\\[5pt]
-  \textit{Einstein (1905):} ``La fuerza sobre un cuerpo en movimiento
-  dentro de un campo magnético no es otra cosa que un campo eléctrico.''\\[5pt]
-  El \textbf{magnetismo} puede verse como un
-  \textbf{efecto relativista} de la electricidad,
-  observable a velocidades mucho menores que la de la luz debido a la
-  enorme concentración de cargas en los conductores.
+  title=Conclusión fundamental — Relatividad del electromagnetismo]
+  Los campos eléctrico y magnético \textbf{no son entidades independientes}.
+  Un campo puramente eléctrico en un marco tiene componentes magnéticas en
+  otro, y viceversa. Las leyes de Maxwell son
+  \textbf{invariantes bajo la transformación de Lorentz}.\\[5pt]
+  \textit{Einstein (1905):} ``La fuerza sobre un cuerpo en movimiento
+  dentro de un campo magnético no es otra cosa que un campo eléctrico.''\\[5pt]
+  El \textbf{magnetismo} puede verse como un
+  \textbf{efecto relativista} de la electricidad,
+  observable a velocidades mucho menores que la de la luz debido a la
+  enorme concentración de cargas en los conductores.
 \end{tcolorbox}
 
 % ============================================================
@@ -1680,40 +1680,40 @@ de los electrones:
 \renewcommand{\arraystretch}{1.7}
 \rowcolors{2}{LightNavy!50}{white}
 \begin{longtable}{p{0.40\textwidth}p{0.50\textwidth}}
-  \toprule
-  \textbf{Ecuación} & \textbf{Descripción} \\
-  \midrule
-  $\displaystyle\mu_0=4\pi\times10^{-7}\un{T\cdot m/A}$ &
-        Constante de permeabilidad del vacío \\
-  $\displaystyle c=1/\!\sqrt{\mu_0\varepsilon_0}$ &
-        Velocidad de la luz en función de $\mu_0$ y $\varepsilon_0$ \\
-  $\displaystyle d\vB{B}=\frac{\mu_0}{4\pi}
-        \frac{i\,d\vB{s}\times\hat{u}_r}{r^2}$ &
-        Ley de Biot-Savart \\
-  $\displaystyle B=\frac{\mu_0 i}{2\pi R}$ &
-        Campo del alambre recto largo (a distancia $R$) \\
-  $\displaystyle B=\frac{\mu_0 iR^2}{2(R^2+z^2)^{3/2}}$ &
-        Campo axial del anillo circular \\
-  $\displaystyle B=\frac{\mu_0 i}{2R}$ &
-        Campo en el centro del anillo ($z=0$) \\
-  $\displaystyle F=\frac{\mu_0 L\,i_1i_2}{2\pi d}$ &
-        Fuerza entre conductores paralelos \\
-  $\displaystyle\oint\vB{B}\cdot d\vB{s}=\mu_0 i_\text{enc}$ &
-        Ley de Ampère \\
-  $\displaystyle B=\frac{\mu_0 i}{2\pi r}$ ($r>R$) &
-        Campo exterior del alambre cilíndrico \\
-  $\displaystyle B=\frac{\mu_0 i\,r}{2\pi R^2}$ ($r<R$) &
-        Campo interior del alambre cilíndrico \\
-  $\displaystyle B=\mu_0 i_0 n$ &
-        Campo del solenoide ideal ($n$\,=\,espiras/m) \\
-  $\displaystyle B=\frac{\mu_0 i_0 N}{2\pi r}$ &
-        Campo del toroide ideal \\
-  \bottomrule
+  \toprule
+  \textbf{Ecuación} & \textbf{Descripción} \\
+  \midrule
+  $\displaystyle\mu_0=4\pi\times10^{-7}\un{T\cdot m/A}$ &
+        Constante de permeabilidad del vacío \\
+  $\displaystyle c=1/\!\sqrt{\mu_0\varepsilon_0}$ &
+        Velocidad de la luz en función de $\mu_0$ y $\varepsilon_0$ \\
+  $\displaystyle d\vB{B}=\frac{\mu_0}{4\pi}
+        \frac{i\,d\vB{s}\times\hat{u}_r}{r^2}$ &
+        Ley de Biot-Savart \\
+  $\displaystyle B=\frac{\mu_0 i}{2\pi R}$ &
+        Campo del alambre recto largo (a distancia $R$) \\
+  $\displaystyle B=\frac{\mu_0 iR^2}{2(R^2+z^2)^{3/2}}$ &
+        Campo axial del anillo circular \\
+  $\displaystyle B=\frac{\mu_0 i}{2R}$ &
+        Campo en el centro del anillo ($z=0$) \\
+  $\displaystyle F=\frac{\mu_0 L\,i_1i_2}{2\pi d}$ &
+        Fuerza entre conductores paralelos \\
+  $\displaystyle\oint\vB{B}\cdot d\vB{s}=\mu_0 i_\text{enc}$ &
+        Ley de Ampère \\
+  $\displaystyle B=\frac{\mu_0 i}{2\pi r}$ ($r>R$) &
+        Campo exterior del alambre cilíndrico \\
+  $\displaystyle B=\frac{\mu_0 i\,r}{2\pi R^2}$ ($r<R$) &
+        Campo interior del alambre cilíndrico \\
+  $\displaystyle B=\mu_0 i_0 n$ &
+        Campo del solenoide ideal ($n$\,=\,espiras/m) \\
+  $\displaystyle B=\frac{\mu_0 i_0 N}{2\pi r}$ &
+        Campo del toroide ideal \\
+  \bottomrule
 \end{longtable}
 \end{center}
 
 % ============================================================
-%  TABLA FINAL COMPARATIVA
+%  TABLA FINAL COMPARATIVA
 % ============================================================
 \section*{Tabla Comparativa General — Electricidad y Magnetismo}
 \addcontentsline{toc}{section}{Tabla comparativa — Electricidad y Magnetismo}
@@ -1722,39 +1722,39 @@ de los electrones:
 \renewcommand{\arraystretch}{1.6}
 \rowcolors{2}{LightGuinda!50}{white}
 \begin{tabular}{p{0.30\textwidth}p{0.30\textwidth}p{0.30\textwidth}}
-  \toprule
-  \textbf{Concepto} &
-  \textbf{Electricidad} &
-  \textbf{Magnetismo} \\
-  \midrule
-  Fuente del campo &
-  Carga $q$ &
-  Corriente $i$ ó $q$ en mov. \\
-  Vector campo &
-  $\vB{E}$ &
-  $\vB{B}$ \\
-  Constante fundamental &
-  $\varepsilon_0=8.85\times10^{-12}\un{C^2/N\cdot m^2}$ &
-  $\mu_0=4\pi\times10^{-7}\un{T\cdot m/A}$ \\
-  Ley de la fuerza &
-  Coulomb: $F=kq_1q_2/r^2$ &
-  Biot-Savart: $d\vB{B}=\frac{\mu_0}{4\pi}\frac{i\,d\vB{s}\times\hat{r}}{r^2}$\\
-  Ley de simetría &
-  Gauss: $\oint\vB{E}\cdot d\vB{A}=q/\varepsilon_0$ &
-  Ampère: $\oint\vB{B}\cdot d\vB{s}=\mu_0 i$ \\
-  Líneas de campo &
-  Abiertas (cargas $\to$ cargas) &
-  Cerradas (anillos) \\
-  Dipolo &
-  $\vB{p}$: par $\pm q$ &
-  $\vB{\mu}=Ni A\hat{n}$: espira \\
-  Torque &
-  $\vB{\tau}=\vB{p}\times\vB{E}$ &
-  $\vB{\tau}=\vB{\mu}\times\vB{B}$ \\
-  Energía potencial &
-  $U=-\vB{p}\cdot\vB{E}$ &
-  $U=-\vB{\mu}\cdot\vB{B}$ \\
-  \bottomrule
+  \toprule
+  \textbf{Concepto} &
+  \textbf{Electricidad} &
+  \textbf{Magnetismo} \\
+  \midrule
+  Fuente del campo &
+  Carga $q$ &
+  Corriente $i$ ó $q$ en mov. \\
+  Vector campo &
+  $\vB{E}$ &
+  $\vB{B}$ \\
+  Constante fundamental &
+  $\varepsilon_0=8.85\times10^{-12}\un{C^2/N\cdot m^2}$ &
+  $\mu_0=4\pi\times10^{-7}\un{T\cdot m/A}$ \\
+  Ley de la fuerza &
+  Coulomb: $F=kq_1q_2/r^2$ &
+  Biot-Savart: $d\vB{B}=\frac{\mu_0}{4\pi}\frac{i\,d\vB{s}\times\hat{r}}{r^2}$\\
+  Ley de simetría &
+  Gauss: $\oint\vB{E}\cdot d\vB{A}=q/\varepsilon_0$ &
+  Ampère: $\oint\vB{B}\cdot d\vB{s}=\mu_0 i$ \\
+  Líneas de campo &
+  Abiertas (cargas $\to$ cargas) &
+  Cerradas (anillos) \\
+  Dipolo &
+  $\vB{p}$: par $\pm q$ &
+  $\vB{\mu}=Ni A\hat{n}$: espira \\
+  Torque &
+  $\vB{\tau}=\vB{p}\times\vB{E}$ &
+  $\vB{\tau}=\vB{\mu}\times\vB{B}$ \\
+  Energía potencial &
+  $U=-\vB{p}\cdot\vB{E}$ &
+  $U=-\vB{\mu}\cdot\vB{B}$ \\
+  \bottomrule
 \end{tabular}
 \captionof{table}{Comparación sistemática entre campo eléctrico y magnético.}
 \end{center}
